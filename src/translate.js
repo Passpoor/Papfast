@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -19,8 +19,13 @@ function resolveConfig(configStr) {
   });
 }
 
-// 加载配置，支持环境变量替换
-const configText = readFileSync(join(__dirname, '../config/config.json'), 'utf-8');
+// 加载配置：优先使用 config.local.json（本地测试），否则使用 config.json（GitHub Actions）
+let configPath = join(__dirname, '../config/config.json');
+if (existsSync(join(__dirname, '../config/config.local.json'))) {
+  configPath = join(__dirname, '../config/config.local.json');
+}
+
+const configText = readFileSync(configPath, 'utf-8');
 const config = JSON.parse(resolveConfig(configText));
 
 /**

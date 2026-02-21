@@ -10,7 +10,7 @@ import { translateAllPapers } from './translate.js';
 import { analyzeAllPapers } from './analyze.js';
 import { sendPaperEmail } from './email.js';
 import { getJournalRanks, formatJournalInfo } from './journal-rank.js';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -31,13 +31,15 @@ function resolveConfig(configStr) {
   });
 }
 
-// 加载配置，支持环境变量替换
-const configText = readFileSync(join(__dirname, '../config/config.json'), 'utf-8');
-const config = JSON.parse(resolveConfig(configText));
+// 加载配置：优先使用 config.local.json（本地测试），否则使用 config.json（GitHub Actions）
+let configPath = join(__dirname, '../config/config.json');
+if (existsSync(join(__dirname, '../config/config.local.json'))) {
+  configPath = join(__dirname, '../config/config.local.json');
+  console.log('[本地] 使用 config.local.json');
+}
 
-// 调试：检查环境变量是否正确加载
-console.log('[调试] SMTP_HOST:', process.env.SMTP_HOST || '未设置');
-console.log('[调试] LLM_API_KEY:', process.env.LLM_API_KEY ? '已设置' : '未设置');
+const configText = readFileSync(configPath, 'utf-8');
+const config = JSON.parse(resolveConfig(configText));
 
 async function processModule(module) {
   console.log(`\n${'='.repeat(50)}`);

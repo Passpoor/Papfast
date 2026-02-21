@@ -54,6 +54,17 @@
       "daysBack": 7,
       "fallbackFromYear": 2020,
       "fallbackMaxResults": 10
+    },
+    {
+      "name": "巨噬细胞吞噬",
+      "keywords": [
+        "(\"macrophag*\"[Title] AND (\"phagocytosis\"[Title] OR \"phagocytic\"[Title] OR \"engulfment\"[Title] OR \"efferocytotic\"[Title] OR \"apoptotic cell clearance\"[Title] OR \"apoptotic cell engulfment\"[Title])) AND (\"Nature*\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nature Immunol*\"[Journal] OR \"Nature Med*\"[Journal] OR \"Nature Cell Biol*\"[Journal] OR \"Nature Commun*\"[Journal] OR \"Nat Rev Immunol*\"[Journal] OR \"Nat Microbiol*\"[Journal] OR \"Nat Neurosci*\"[Journal] OR \"Nat Genet*\"[Journal] OR \"Nat Metab*\"[Journal] OR \"Nat Biomed Eng*\"[Journal] OR \"Nat Cancer*\"[Journal] OR \"Nat Aging*\"[Journal] OR \"Sci Immunol*\"[Journal] OR \"Sci Transl Med*\"[Journal] OR \"Sci Adv*\"[Journal] OR \"Sci Signal*\"[Journal] OR \"Immunity\"[Journal] OR \"Cell Host Microbe\"[Journal] OR \"Cell Stem Cell\"[Journal] OR \"Mol Cell\"[Journal] OR \"Cell Metab*\"[Journal] OR \"Cancer Cell\"[Journal] OR \"Cell Genom*\"[Journal] OR \"J Exp Med\"[Journal] OR \"Annu Rev Immunol*\"[Journal] OR \"Immunol Rev*\"[Journal] OR \"Trends Immunol*\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Thorax\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Lancet\"[Journal] OR \"N Engl J Med\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal] OR \"Ann Intern Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"EMBO J\"[Journal] OR \"PLoS Biol*\"[Journal] OR \"Blood\"[Journal] OR \"Circulation\"[Journal])"
+      ],
+      "recipients": ["persist2021@163.com"],
+      "maxResults": 15,
+      "daysBack": 7,
+      "fallbackFromYear": 2020,
+      "fallbackMaxResults": 10
     }
   ]
 }

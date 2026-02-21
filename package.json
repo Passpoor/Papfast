@@ -1,0 +1,17 @@
+{
+  "name": "papfast",
+  "version": "1.0.0",
+  "description": "肺泡巨噬细胞论文订阅工具",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "fetch": "node src/fetch.js",
+    "test-email": "node src/test-email.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8",
+    "node-fetch": "^3.3.2",
+    "xml2js": "^0.6.2"
+  }
+}

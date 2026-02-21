@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Local config (with real secrets)
+config/config.local.json
+
+# Memory files (optional)
+memory/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local

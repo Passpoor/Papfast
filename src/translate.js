@@ -5,8 +5,23 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// 加载配置
-const config = JSON.parse(readFileSync(join(__dirname, '../config/config.json'), 'utf-8'));
+/**
+ * 替换配置中的环境变量占位符
+ */
+function resolveConfig(configStr) {
+  return configStr.replace(/\$\{([^}]+)\}/g, (match, key) => {
+    const value = process.env[key];
+    if (!value) {
+      console.warn(`[警告] 环境变量 ${key} 未设置`);
+      return match;
+    }
+    return value;
+  });
+}
+
+// 加载配置，支持环境变量替换
+const configText = readFileSync(join(__dirname, '../config/config.json'), 'utf-8');
+const config = JSON.parse(resolveConfig(configText));
 
 /**
  * 使用智谱 GLM 进行翻译

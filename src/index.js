@@ -35,6 +35,10 @@ function resolveConfig(configStr) {
 const configText = readFileSync(join(__dirname, '../config/config.json'), 'utf-8');
 const config = JSON.parse(resolveConfig(configText));
 
+// 调试：检查环境变量是否正确加载
+console.log('[调试] SMTP_HOST:', process.env.SMTP_HOST || '未设置');
+console.log('[调试] LLM_API_KEY:', process.env.LLM_API_KEY ? '已设置' : '未设置');
+
 async function processModule(module) {
   console.log(`\n${'='.repeat(50)}`);
   console.log(`  模块: ${module.name}`);

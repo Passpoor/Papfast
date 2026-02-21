@@ -29,6 +29,11 @@ function resolveConfig(configStr) {
 const configText = readFileSync(join(__dirname, '../config/config.json'), 'utf-8');
 const config = JSON.parse(resolveConfig(configText));
 
+// 调试：检查 LLM 配置
+if (config.llm?.apiKey?.includes('${')) {
+  console.error('[错误] LLM_API_KEY 环境变量未设置，请检查 GitHub Secrets');
+}
+
 /**
  * 调用 LLM API 进行分析
  * 支持多种后端：OpenAI、智谱、本地模型等

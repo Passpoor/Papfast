@@ -3,9 +3,11 @@
  * Papfast - 多模块论文订阅工具
  * 
  * 支持多个检索模块，每个模块独立关键词和收件人
+ * 支持数据源：PubMed, bioRxiv, medRxiv
  */
 
 import { fetchFromPubMed, fetchFromPubMedSinceYear, filterPapersWithAbstract } from './fetch.js';
+import { fetchPreprints, searchPreprintsByKeywords } from './fetch-preprint.js';
 import { translateAllPapers } from './translate.js';
 import { analyzeAllPapers } from './analyze.js';
 import { sendPaperEmail } from './email.js';
@@ -42,59 +44,104 @@ if (existsSync(join(__dirname, '../config/config.local.json'))) {
 const configText = readFileSync(configPath, 'utf-8');
 const config = JSON.parse(resolveConfig(configText));
 
+/**
+ * 处理单个模块
+ */
 async function processModule(module) {
   console.log(`\n${'='.repeat(50)}`);
   console.log(`  模块: ${module.name}`);
   console.log(`  关键词: ${module.keywords.length} 个`);
   console.log(`  收件人: ${module.recipients.join(', ')}`);
+  if (module.preprint) {
+    console.log(`  预印本: ${module.preprint.server || 'biorxiv'}`);
+  }
   console.log(`${'='.repeat(50)}\n`);
   
   const allPapers = [];
   let isFallback = false;
   let fallbackYear = null;
   
-  // 获取每个关键词的论文（优先最近7天）
-  for (const keyword of module.keywords) {
-    try {
-      // 先搜索最近7天
-      let papers = await fetchFromPubMed(keyword, module.daysBack || 7, module.maxResults || 15);
-      
-      // 如果没有新论文，搜索2020年以来的（仅对特定模块启用回退机制）
-      if (papers.length === 0 && module.fallbackFromYear) {
-        console.log(`[回退] 没有新论文，搜索 ${module.fallbackFromYear} 年以来的文献...`);
+  // 获取 PubMed 论文
+  if (module.sources?.includes('pubmed') || !module.sources) {
+    for (const keyword of module.keywords) {
+      try {
+        // 先搜索最近 N 天
+        let papers = await fetchFromPubMed(keyword, module.daysBack || 7, module.maxResults || 15);
         
-        // 获取更多论文用于去重（请求更多，因为会被过滤掉一部分）
-        const fetchLimit = (module.fallbackMaxResults || 10) * 3;
-        papers = await fetchFromPubMedSinceYear(keyword, module.fallbackFromYear, fetchLimit);
+        // 如果没有新论文，启用回退机制
+        if (papers.length === 0 && module.fallbackFromYear) {
+          console.log(`[回退] 没有新论文，搜索 ${module.fallbackFromYear} 年以来的文献...`);
+          
+          const fetchLimit = (module.fallbackMaxResults || 10) * 3;
+          papers = await fetchFromPubMedSinceYear(keyword, module.fallbackFromYear, fetchLimit);
+          papers = filterUnsentPapers(papers, module.name);
+          papers = papers.slice(0, module.fallbackMaxResults || 10);
+          
+          isFallback = true;
+          fallbackYear = module.fallbackFromYear;
+        }
         
-        // 过滤已推送的论文
-        papers = filterUnsentPapers(papers, module.name);
-        
-        // 只保留需要的数量
-        papers = papers.slice(0, module.fallbackMaxResults || 10);
-        
-        isFallback = true;
-        fallbackYear = module.fallbackFromYear;
+        allPapers.push(...papers);
+        await new Promise(r => setTimeout(r, 1000));
+      } catch (error) {
+        console.error(`[PubMed] 获取失败: ${keyword}`, error.message);
       }
-      
-      allPapers.push(...papers);
-      await new Promise(r => setTimeout(r, 1000));
-    } catch (error) {
-      console.error(`[PubMed] 获取失败: ${keyword}`, error.message);
     }
   }
   
-  // 去重
+  // 获取预印本 (bioRxiv / medRxiv)
+  if (module.preprint?.enabled) {
+    const preprintConfig = module.preprint;
+    const server = preprintConfig.server || 'biorxiv';
+    const preprintDays = preprintConfig.daysBack || module.daysBack || 7;
+    const preprintMax = preprintConfig.maxResults || 10;
+    
+    try {
+      let preprints;
+      
+      // 两种模式：按类别 或 按关键词搜索
+      if (preprintConfig.category) {
+        // 按类别获取
+        preprints = await fetchPreprints({
+          server,
+          category: preprintConfig.category,
+          daysBack: preprintDays,
+          maxResults: preprintMax
+        });
+      } else if (module.keywords.length > 0) {
+        // 按关键词搜索（本地过滤）
+        preprints = await searchPreprintsByKeywords({
+          server,
+          keywords: module.keywords,
+          daysBack: preprintDays,
+          maxResults: preprintMax
+        });
+      }
+      
+      if (preprints && preprints.length > 0) {
+        // 过滤已推送的预印本（用 DOI 作为标识）
+        preprints = filterUnsentPapers(preprints, `${module.name}-preprint`);
+        allPapers.push(...preprints);
+      }
+      
+      await new Promise(r => setTimeout(r, 500));
+    } catch (error) {
+      console.error(`[预印本] ${server} 获取失败:`, error.message);
+    }
+  }
+  
+  // 去重（用 PMID 或 DOI）
   const uniquePapers = [];
   const seenIds = new Set();
   for (const paper of allPapers) {
-    if (!seenIds.has(paper.pmid)) {
-      seenIds.add(paper.pmid);
+    const id = paper.pmid || paper.doi;
+    if (id && !seenIds.has(id)) {
+      seenIds.add(id);
       uniquePapers.push(paper);
     }
   }
   
-  console.log(`[总计] 获取 ${uniquePapers.length} 篇唯一论文`);
+  console.log(`[总计] 获取 ${uniquePapers.length} 篇唯一论文/预印本`);
   
   // 过滤无摘要论文
   const papersWithAbstract = filterPapersWithAbstract(uniquePapers);
@@ -116,8 +163,8 @@ async function processModule(module) {
   // 添加期刊信息到论文
   const papersWithJournalInfo = translatedPapers.map(paper => ({
     ...paper,
-    journalInfo: journalRanks.get(paper.journal) || null,
-    journalInfoText: formatJournalInfo(journalRanks.get(paper.journal))
+    journalInfo: paper.isPreprint ? paper.journalInfo : (journalRanks.get(paper.journal) || null),
+    journalInfoText: paper.isPreprint ? '预印本' : formatJournalInfo(journalRanks.get(paper.journal))
   }));
   
   // 深度分析

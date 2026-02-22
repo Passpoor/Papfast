@@ -65,6 +65,22 @@
       "daysBack": 7,
       "fallbackFromYear": 2020,
       "fallbackMaxResults": 10
+    },
+    {
+      "name": "肺泡巨噬细胞-预印本",
+      "keywords": ["alveolar macrophage", "macrophage", "lung immunity"],
+      "recipients": ["persist2021@163.com"],
+      "maxResults": 10,
+      "daysBack": 7,
+      "sources": [],
+      "preprint": {
+        "enabled": true,
+        "server": "biorxiv",
+        "category": "immunology",
+        "daysBack": 7,
+        "maxResults": 10
+      },
+      "enabled": false
     }
   ]
 }

@@ -5,6 +5,13 @@
 
 ## 2026-02-22 更新
 
+### 预印本支持 (bioRxiv / medRxiv)
+- 新增 `src/fetch-preprint.js` 预印本抓取模块
+- 支持按类别获取预印本（如 immunology, cell biology）
+- 支持按关键词搜索（本地过滤）
+- 配置示例见 config.json 中的 `preprint` 字段
+- 预印本会被标记为 `isPreprint: true`，显示"预印本 - 尚未经过同行评审"
+
 ### 已推送论文去重机制
 - 新增 `src/sent-papers.js` 管理已推送论文记录
 - 记录存储在 `data/sent-papers.json`

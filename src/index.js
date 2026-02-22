@@ -10,6 +10,7 @@ import { translateAllPapers } from './translate.js';
 import { analyzeAllPapers } from './analyze.js';
 import { sendPaperEmail } from './email.js';
 import { getJournalRanks, formatJournalInfo } from './journal-rank.js';
+import { filterUnsentPapers, recordSentPapers } from './sent-papers.js';
 import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -61,7 +62,17 @@ async function processModule(module) {
       // 如果没有新论文，搜索2020年以来的（仅对特定模块启用回退机制）
       if (papers.length === 0 && module.fallbackFromYear) {
         console.log(`[回退] 没有新论文，搜索 ${module.fallbackFromYear} 年以来的文献...`);
-        papers = await fetchFromPubMedSinceYear(keyword, module.fallbackFromYear, module.fallbackMaxResults || 10);
+        
+        // 获取更多论文用于去重（请求更多，因为会被过滤掉一部分）
+        const fetchLimit = (module.fallbackMaxResults || 10) * 3;
+        papers = await fetchFromPubMedSinceYear(keyword, module.fallbackFromYear, fetchLimit);
+        
+        // 过滤已推送的论文
+        papers = filterUnsentPapers(papers, module.name);
+        
+        // 只保留需要的数量
+        papers = papers.slice(0, module.fallbackMaxResults || 10);
+        
         isFallback = true;
         fallbackYear = module.fallbackFromYear;
       }
@@ -89,7 +100,7 @@ async function processModule(module) {
   const papersWithAbstract = filterPapersWithAbstract(uniquePapers);
   
   if (papersWithAbstract.length === 0) {
-    console.log(`[跳过] ${module.name} 没有有效论文（全部无摘要）`);
+    console.log(`[跳过] ${module.name} 没有有效论文（全部无摘要或已推送）`);
     return;
   }
   
@@ -116,6 +127,9 @@ async function processModule(module) {
   // 发送邮件
   console.log(`\n[步骤 4/4] 发送邮件...`);
   await sendPaperEmail(analyzedPapers, module.name, module.recipients, isFallback, fallbackYear);
+  
+  // 记录已推送的论文
+  recordSentPapers(analyzedPapers, module.name);
   
   console.log(`\n[完成] ${module.name} 处理完毕，共 ${papersWithAbstract.length} 篇论文`);
 }

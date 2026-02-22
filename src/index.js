@@ -4,6 +4,8 @@
  * 
  * 支持多个检索模块，每个模块独立关键词和收件人
  * 支持数据源：PubMed, bioRxiv, medRxiv
+ * 
+ * 预印本处理：仅翻译标题和摘要，不执行深度分析
  */
 
 import { fetchFromPubMed, fetchFromPubMedSinceYear, filterPapersWithAbstract } from './fetch.js';
@@ -52,36 +54,34 @@ async function processModule(module) {
   console.log(`  模块: ${module.name}`);
   console.log(`  关键词: ${module.keywords.length} 个`);
   console.log(`  收件人: ${module.recipients.join(', ')}`);
-  if (module.preprint) {
-    console.log(`  预印本: ${module.preprint.server || 'biorxiv'}`);
+  if (module.preprint?.enabled) {
+    console.log(`  预印本: ${module.preprint.server || 'biorxiv'} (仅翻译)`);
   }
   console.log(`${'='.repeat(50)}\n`);
   
-  const allPapers = [];
+  const pubmedPapers = [];
+  const preprintPapers = [];
   let isFallback = false;
   let fallbackYear = null;
   
-  // 获取 PubMed 论文
+  // ========== 1. 获取 PubMed 论文 ==========
   if (module.sources?.includes('pubmed') || !module.sources) {
     for (const keyword of module.keywords) {
       try {
-        // 先搜索最近 N 天
         let papers = await fetchFromPubMed(keyword, module.daysBack || 7, module.maxResults || 15);
         
-        // 如果没有新论文，启用回退机制
+        // 回退机制
         if (papers.length === 0 && module.fallbackFromYear) {
           console.log(`[回退] 没有新论文，搜索 ${module.fallbackFromYear} 年以来的文献...`);
-          
           const fetchLimit = (module.fallbackMaxResults || 10) * 3;
           papers = await fetchFromPubMedSinceYear(keyword, module.fallbackFromYear, fetchLimit);
           papers = filterUnsentPapers(papers, module.name);
           papers = papers.slice(0, module.fallbackMaxResults || 10);
-          
           isFallback = true;
           fallbackYear = module.fallbackFromYear;
         }
         
-        allPapers.push(...papers);
+        pubmedPapers.push(...papers);
         await new Promise(r => setTimeout(r, 1000));
       } catch (error) {
         console.error(`[PubMed] 获取失败: ${keyword}`, error.message);
@@ -89,7 +89,7 @@ async function processModule(module) {
     }
   }
   
-  // 获取预印本 (bioRxiv / medRxiv)
+  // ========== 2. 获取预印本 (bioRxiv / medRxiv) ==========
   if (module.preprint?.enabled) {
     const preprintConfig = module.preprint;
     const server = preprintConfig.server || 'biorxiv';
@@ -99,9 +99,7 @@ async function processModule(module) {
     try {
       let preprints;
       
-      // 两种模式：按类别 或 按关键词搜索
       if (preprintConfig.category) {
-        // 按类别获取
         preprints = await fetchPreprints({
           server,
           category: preprintConfig.category,
@@ -109,7 +107,6 @@ async function processModule(module) {
           maxResults: preprintMax
         });
       } else if (module.keywords.length > 0) {
-        // 按关键词搜索（本地过滤）
         preprints = await searchPreprintsByKeywords({
           server,
           keywords: module.keywords,
@@ -119,9 +116,8 @@ async function processModule(module) {
       }
       
       if (preprints && preprints.length > 0) {
-        // 过滤已推送的预印本（用 DOI 作为标识）
         preprints = filterUnsentPapers(preprints, `${module.name}-preprint`);
-        allPapers.push(...preprints);
+        preprintPapers.push(...preprints);
       }
       
       await new Promise(r => setTimeout(r, 500));
@@ -130,55 +126,88 @@ async function processModule(module) {
     }
   }
   
-  // 去重（用 PMID 或 DOI）
-  const uniquePapers = [];
-  const seenIds = new Set();
-  for (const paper of allPapers) {
-    const id = paper.pmid || paper.doi;
-    if (id && !seenIds.has(id)) {
-      seenIds.add(id);
-      uniquePapers.push(paper);
+  // ========== 3. 处理 PubMed 论文（翻译 + 深度分析）==========
+  let analyzedPubmedPapers = [];
+  
+  if (pubmedPapers.length > 0) {
+    // 去重
+    const uniquePapers = [];
+    const seenIds = new Set();
+    for (const paper of pubmedPapers) {
+      if (paper.pmid && !seenIds.has(paper.pmid)) {
+        seenIds.add(paper.pmid);
+        uniquePapers.push(paper);
+      }
+    }
+    
+    const papersWithAbstract = filterPapersWithAbstract(uniquePapers);
+    
+    if (papersWithAbstract.length > 0) {
+      console.log(`[PubMed] ${papersWithAbstract.length} 篇论文待处理`);
+      
+      // 翻译
+      console.log(`\n[PubMed] 翻译论文...`);
+      const translatedPapers = await translateAllPapers(papersWithAbstract);
+      
+      // 获取期刊等级
+      console.log(`[PubMed] 获取期刊等级...`);
+      const journals = [...new Set(translatedPapers.map(p => p.journal).filter(Boolean))];
+      const journalRanks = await getJournalRanks(journals);
+      
+      const papersWithJournalInfo = translatedPapers.map(paper => ({
+        ...paper,
+        journalInfo: journalRanks.get(paper.journal) || null,
+        journalInfoText: formatJournalInfo(journalRanks.get(paper.journal))
+      }));
+      
+      // 深度分析
+      console.log(`[PubMed] 深度分析...`);
+      analyzedPubmedPapers = await analyzeAllPapers(papersWithJournalInfo);
     }
   }
   
-  console.log(`[总计] 获取 ${uniquePapers.length} 篇唯一论文/预印本`);
+  // ========== 4. 处理预印本（仅翻译，不深度分析）==========
+  let translatedPreprintPapers = [];
   
-  // 过滤无摘要论文
-  const papersWithAbstract = filterPapersWithAbstract(uniquePapers);
+  if (preprintPapers.length > 0) {
+    // 去重
+    const uniquePreprints = [];
+    const seenDois = new Set();
+    for (const paper of preprintPapers) {
+      if (paper.doi && !seenDois.has(paper.doi)) {
+        seenDois.add(paper.doi);
+        uniquePreprints.push(paper);
+      }
+    }
+    
+    const preprintsWithAbstract = filterPapersWithAbstract(uniquePreprints);
+    
+    if (preprintsWithAbstract.length > 0) {
+      console.log(`[预印本] ${preprintsWithAbstract.length} 篇预印本待处理（仅翻译）`);
+      
+      // 仅翻译，不进行深度分析
+      console.log(`[预印本] 翻译标题和摘要...`);
+      translatedPreprintPapers = await translateAllPapers(preprintsWithAbstract);
+      
+      // 预印本不需要期刊等级查询，已有默认标记
+    }
+  }
   
-  if (papersWithAbstract.length === 0) {
-    console.log(`[跳过] ${module.name} 没有有效论文（全部无摘要或已推送）`);
+  // ========== 5. 合并发送邮件 ==========
+  const allPapers = [...analyzedPubmedPapers, ...translatedPreprintPapers];
+  
+  if (allPapers.length === 0) {
+    console.log(`[跳过] ${module.name} 没有有效论文`);
     return;
   }
   
-  // 翻译
-  console.log(`\n[步骤 1/4] 翻译论文...`);
-  const translatedPapers = await translateAllPapers(papersWithAbstract);
+  console.log(`\n[发送] ${module.name}: ${analyzedPubmedPapers.length} 篇论文 + ${translatedPreprintPapers.length} 篇预印本`);
+  await sendPaperEmail(allPapers, module.name, module.recipients, isFallback, fallbackYear);
   
-  // 获取期刊等级信息
-  console.log(`\n[步骤 2/4] 获取期刊等级信息...`);
-  const journals = [...new Set(translatedPapers.map(p => p.journal).filter(Boolean))];
-  const journalRanks = await getJournalRanks(journals);
+  // 记录已推送
+  recordSentPapers(allPapers, module.name);
   
-  // 添加期刊信息到论文
-  const papersWithJournalInfo = translatedPapers.map(paper => ({
-    ...paper,
-    journalInfo: paper.isPreprint ? paper.journalInfo : (journalRanks.get(paper.journal) || null),
-    journalInfoText: paper.isPreprint ? '预印本' : formatJournalInfo(journalRanks.get(paper.journal))
-  }));
-  
-  // 深度分析
-  console.log(`\n[步骤 3/4] 深度分析论文...`);
-  const analyzedPapers = await analyzeAllPapers(papersWithJournalInfo);
-  
-  // 发送邮件
-  console.log(`\n[步骤 4/4] 发送邮件...`);
-  await sendPaperEmail(analyzedPapers, module.name, module.recipients, isFallback, fallbackYear);
-  
-  // 记录已推送的论文
-  recordSentPapers(analyzedPapers, module.name);
-  
-  console.log(`\n[完成] ${module.name} 处理完毕，共 ${papersWithAbstract.length} 篇论文`);
+  console.log(`\n[完成] ${module.name} 处理完毕`);
 }
 
 async function main() {
@@ -189,7 +218,6 @@ async function main() {
   console.log('========================================');
   
   for (const module of config.modules) {
-    // 跳过禁用的模块
     if (module.enabled === false) {
       console.log(`\n[跳过] ${module.name} (已禁用)`);
       continue;

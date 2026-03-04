@@ -1,5 +1,7 @@
 # Papfast - 学术论文订阅工具
 
+开发者：上海交通大学药学院 - 乔宇（Yu Qiao; Shanghai Jiaotong University），联系方式：xseq_fastfreee@163.com
+
 每天自动从 PubMed（可选预印本源）抓取论文，使用 LLM 进行翻译与结构化分析，并以“公众号风格”邮件推送给指定收件人。
 
 ---

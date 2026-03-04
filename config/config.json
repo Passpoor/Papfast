@@ -17,9 +17,9 @@
   },
   "modules": [
     {
-      "name": "肺泡巨噬细胞",
+      "name": "示例模块 A",
       "keywords": [
-        "(\"alveolar macrophag*\"[Title]) AND (\"Nature*\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nature Immunol*\"[Journal] OR \"Nature Med*\"[Journal] OR \"Nature Cell Biol*\"[Journal] OR \"Nature Commun*\"[Journal] OR \"Nat Rev Immunol*\"[Journal] OR \"Nat Microbiol*\"[Journal] OR \"Nat Neurosci*\"[Journal] OR \"Nat Genet*\"[Journal] OR \"Nat Metab*\"[Journal] OR \"Nat Biomed Eng*\"[Journal] OR \"Nat Cancer*\"[Journal] OR \"Nat Aging*\"[Journal] OR \"Sci Immunol*\"[Journal] OR \"Sci Transl Med*\"[Journal] OR \"Sci Adv*\"[Journal] OR \"Sci Signal*\"[Journal] OR \"Immunity\"[Journal] OR \"Cell Host Microbe\"[Journal] OR \"Cell Stem Cell\"[Journal] OR \"Mol Cell\"[Journal] OR \"Cell Metab*\"[Journal] OR \"Cancer Cell\"[Journal] OR \"Cell Genom*\"[Journal] OR \"J Exp Med\"[Journal] OR \"Annu Rev Immunol*\"[Journal] OR \"Immunol Rev*\"[Journal] OR \"Trends Immunol*\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Thorax\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Lancet\"[Journal] OR \"N Engl J Med\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal] OR \"Ann Intern Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"EMBO J\"[Journal] OR \"PLoS Biol*\"[Journal] OR \"Blood\"[Journal] OR \"Circulation\"[Journal])"
+        "your pubmed search string here"
       ],
       "recipients": ["example1@example.com"],
       "maxResults": 15,
@@ -28,16 +28,9 @@
       "fallbackMaxResults": 10
     },
     {
-      "name": "抗体偶联药物与肺癌",
+      "name": "示例模块 B",
       "keywords": [
-        "antibody-drug conjugate[Title]",
-        "antibody drug conjugate[Title]",
-        "ADC[Title] AND cancer[Title]",
-        "lung cancer[Title]",
-        "non-small cell lung cancer[Title]",
-        "NSCLC[Title]",
-        "lung adenocarcinoma[Title]",
-        "lung squamous[Title]"
+        "another pubmed search string"
       ],
       "recipients": ["example1@example.com", "example2@example.com"],
       "maxResults": 15,
@@ -45,9 +38,9 @@
       "enabled": false
     },
     {
-      "name": "哮喘",
+      "name": "示例模块 C",
       "keywords": [
-        "asthma[Title/Abstract] NOT ( \"lung cancer\"[Title/Abstract] OR NSCLC[Title/Abstract] OR carcinoma[Title/Abstract] ) AND ( \"Nature\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nat Immunol\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Cell Biol\"[Journal] OR \"Nat Commun\"[Journal] OR \"Nat Rev Immunol\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nat Genet\"[Journal] OR \"Nat Metab\"[Journal] OR \"Nat Cancer\"[Journal] OR \"Sci Immunol\"[Journal] OR \"Sci Transl Med\"[Journal] OR \"Sci Adv\"[Journal] OR \"Immunity\"[Journal] OR \"J Exp Med\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Thorax\"[Journal] ) NOT ( review[Publication Type] OR editorial[Publication Type] OR comment[Publication Type] OR letter[Publication Type] OR review[Title] OR editorial[Title] OR comment[Title] OR meeting[Title] OR republished[Title] OR correction[Title] OR erratum[Title] OR retraction[Title] )"
+        "example[Title/Abstract]"
       ],
       "recipients": ["example1@example.com"],
       "maxResults": 15,
@@ -56,19 +49,8 @@
       "fallbackMaxResults": 10
     },
     {
-      "name": "巨噬细胞吞噬",
-      "keywords": [
-        "(\"macrophag*\"[Title] AND (\"phagocytosis\"[Title] OR \"phagocytic\"[Title] OR \"engulfment\"[Title] OR \"efferocytotic\"[Title] OR \"apoptotic cell clearance\"[Title] OR \"apoptotic cell engulfment\"[Title])) AND (\"Nature*\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nature Immunol*\"[Journal] OR \"Nature Med*\"[Journal] OR \"Nature Cell Biol*\"[Journal] OR \"Nature Commun*\"[Journal] OR \"Nat Rev Immunol*\"[Journal] OR \"Nat Microbiol*\"[Journal] OR \"Nat Neurosci*\"[Journal] OR \"Nat Genet*\"[Journal] OR \"Nat Metab*\"[Journal] OR \"Nat Biomed Eng*\"[Journal] OR \"Nat Cancer*\"[Journal] OR \"Nat Aging*\"[Journal] OR \"Sci Immunol*\"[Journal] OR \"Sci Transl Med*\"[Journal] OR \"Sci Adv*\"[Journal] OR \"Sci Signal*\"[Journal] OR \"Immunity\"[Journal] OR \"Cell Host Microbe\"[Journal] OR \"Cell Stem Cell\"[Journal] OR \"Mol Cell\"[Journal] OR \"Cell Metab*\"[Journal] OR \"Cancer Cell\"[Journal] OR \"Cell Genom*\"[Journal] OR \"J Exp Med\"[Journal] OR \"Annu Rev Immunol*\"[Journal] OR \"Immunol Rev*\"[Journal] OR \"Trends Immunol*\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Thorax\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Lancet\"[Journal] OR \"N Engl J Med\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal] OR \"Ann Intern Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"EMBO J\"[Journal] OR \"PLoS Biol*\"[Journal] OR \"Blood\"[Journal] OR \"Circulation\"[Journal])"
-      ],
-      "recipients": ["example1@example.com"],
-      "maxResults": 15,
-      "daysBack": 7,
-      "fallbackFromYear": 2020,
-      "fallbackMaxResults": 10
-    },
-    {
-      "name": "肺泡巨噬细胞-预印本",
-      "keywords": ["alveolar macrophage", "macrophage", "lung immunity"],
+      "name": "示例预印本模块",
+      "keywords": ["example keyword 1", "example keyword 2"],
       "recipients": ["example1@example.com"],
       "maxResults": 10,
       "daysBack": 7,

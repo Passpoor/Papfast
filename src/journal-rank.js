@@ -4,7 +4,7 @@
  */
 
 const EASYSCHOLAR_API = 'https://www.easyscholar.cc/open/getPublicationRank';
-const SECRET_KEY = process.env.EASYSCHOLAR_KEY || '5b3999c870c042d6a4aacbd6ba13f100';
+const SECRET_KEY = process.env.EASYSCHOLAR_KEY || '';
 
 // 请求限流：每秒最多2次
 let lastRequestTime = 0;
@@ -17,6 +17,10 @@ const MIN_INTERVAL = 550; // 550ms 间隔
  */
 export async function getJournalRank(journalName) {
   if (!journalName) return null;
+  if (!SECRET_KEY) {
+    console.warn('[easyScholar] EASYSCHOLAR_KEY 未配置，跳过期刊查询');
+    return null;
+  }
   
   // 限流
   const now = Date.now();

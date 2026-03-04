@@ -34,27 +34,7 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           EASYSCHOLAR_KEY: ${{ secrets.EASYSCHOLAR_KEY }}
 
-      - name: Persist sent papers state
-        if: always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # 如果没有状态文件，先跳过
-          if [ ! -f "data/sent-papers.json" ]; then
-            echo "no sent-papers.json to persist"
-            exit 0
-          fi
-
-          # 配置提交身份（使用 GitHub Actions 机器人）
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # 仅当文件有变化时才提交
-          if git diff --quiet -- data/sent-papers.json; then
-            echo "sent-papers.json not changed, skip commit"
-            exit 0
-          fi
-
-          git add data/sent-papers.json
-          git commit -m "chore: update sent papers state [skip ci]" || exit 0
-          git push origin HEAD
+      # 说明：
+      # 公共仓库默认不再自动把 data/sent-papers.json 提交回仓库，以避免泄露个人订阅历史。
+      # 如果你在自己的私有 fork 中希望启用基于 GitHub Actions 的跨天去重，
+      # 可以在私有仓库中添加一个额外步骤，将 data/sent-papers.json 提交回去。

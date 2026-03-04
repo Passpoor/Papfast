@@ -4,8 +4,9 @@ node_modules/
 # Local config (with real secrets)
 config/config.local.json
 
-# Memory files (optional)
+# Memory files (optional, keep local only)
 memory/
+MEMORY.md
 
 # Logs
 *.log
@@ -21,6 +22,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Environment files
+# Environment / local config files
 .env
 .env.local
+config/config.local.json
+data/

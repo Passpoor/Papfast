@@ -21,7 +21,7 @@
       "keywords": [
         "(\"alveolar macrophag*\"[Title]) AND (\"Nature*\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nature Immunol*\"[Journal] OR \"Nature Med*\"[Journal] OR \"Nature Cell Biol*\"[Journal] OR \"Nature Commun*\"[Journal] OR \"Nat Rev Immunol*\"[Journal] OR \"Nat Microbiol*\"[Journal] OR \"Nat Neurosci*\"[Journal] OR \"Nat Genet*\"[Journal] OR \"Nat Metab*\"[Journal] OR \"Nat Biomed Eng*\"[Journal] OR \"Nat Cancer*\"[Journal] OR \"Nat Aging*\"[Journal] OR \"Sci Immunol*\"[Journal] OR \"Sci Transl Med*\"[Journal] OR \"Sci Adv*\"[Journal] OR \"Sci Signal*\"[Journal] OR \"Immunity\"[Journal] OR \"Cell Host Microbe\"[Journal] OR \"Cell Stem Cell\"[Journal] OR \"Mol Cell\"[Journal] OR \"Cell Metab*\"[Journal] OR \"Cancer Cell\"[Journal] OR \"Cell Genom*\"[Journal] OR \"J Exp Med\"[Journal] OR \"Annu Rev Immunol*\"[Journal] OR \"Immunol Rev*\"[Journal] OR \"Trends Immunol*\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Thorax\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Lancet\"[Journal] OR \"N Engl J Med\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal] OR \"Ann Intern Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"EMBO J\"[Journal] OR \"PLoS Biol*\"[Journal] OR \"Blood\"[Journal] OR \"Circulation\"[Journal])"
       ],
-      "recipients": ["persist2021@163.com"],
+      "recipients": ["example1@example.com"],
       "maxResults": 15,
       "daysBack": 7,
       "fallbackFromYear": 2020,
@@ -39,7 +39,7 @@
         "lung adenocarcinoma[Title]",
         "lung squamous[Title]"
       ],
-      "recipients": ["persist2021@163.com", "promising679@163.com"],
+      "recipients": ["example1@example.com", "example2@example.com"],
       "maxResults": 15,
       "daysBack": 7,
       "enabled": false
@@ -49,7 +49,7 @@
       "keywords": [
         "asthma[Title/Abstract] NOT ( \"lung cancer\"[Title/Abstract] OR NSCLC[Title/Abstract] OR carcinoma[Title/Abstract] ) AND ( \"Nature\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nat Immunol\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Cell Biol\"[Journal] OR \"Nat Commun\"[Journal] OR \"Nat Rev Immunol\"[Journal] OR \"Nat Microbiol\"[Journal] OR \"Nat Genet\"[Journal] OR \"Nat Metab\"[Journal] OR \"Nat Cancer\"[Journal] OR \"Sci Immunol\"[Journal] OR \"Sci Transl Med\"[Journal] OR \"Sci Adv\"[Journal] OR \"Immunity\"[Journal] OR \"J Exp Med\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Thorax\"[Journal] ) NOT ( review[Publication Type] OR editorial[Publication Type] OR comment[Publication Type] OR letter[Publication Type] OR review[Title] OR editorial[Title] OR comment[Title] OR meeting[Title] OR republished[Title] OR correction[Title] OR erratum[Title] OR retraction[Title] )"
       ],
-      "recipients": ["persist2021@163.com"],
+      "recipients": ["example1@example.com"],
       "maxResults": 15,
       "daysBack": 7,
       "fallbackFromYear": 2020,
@@ -60,7 +60,7 @@
       "keywords": [
         "(\"macrophag*\"[Title] AND (\"phagocytosis\"[Title] OR \"phagocytic\"[Title] OR \"engulfment\"[Title] OR \"efferocytotic\"[Title] OR \"apoptotic cell clearance\"[Title] OR \"apoptotic cell engulfment\"[Title])) AND (\"Nature*\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nature Immunol*\"[Journal] OR \"Nature Med*\"[Journal] OR \"Nature Cell Biol*\"[Journal] OR \"Nature Commun*\"[Journal] OR \"Nat Rev Immunol*\"[Journal] OR \"Nat Microbiol*\"[Journal] OR \"Nat Neurosci*\"[Journal] OR \"Nat Genet*\"[Journal] OR \"Nat Metab*\"[Journal] OR \"Nat Biomed Eng*\"[Journal] OR \"Nat Cancer*\"[Journal] OR \"Nat Aging*\"[Journal] OR \"Sci Immunol*\"[Journal] OR \"Sci Transl Med*\"[Journal] OR \"Sci Adv*\"[Journal] OR \"Sci Signal*\"[Journal] OR \"Immunity\"[Journal] OR \"Cell Host Microbe\"[Journal] OR \"Cell Stem Cell\"[Journal] OR \"Mol Cell\"[Journal] OR \"Cell Metab*\"[Journal] OR \"Cancer Cell\"[Journal] OR \"Cell Genom*\"[Journal] OR \"J Exp Med\"[Journal] OR \"Annu Rev Immunol*\"[Journal] OR \"Immunol Rev*\"[Journal] OR \"Trends Immunol*\"[Journal] OR \"Am J Respir Crit Care Med\"[Journal] OR \"Thorax\"[Journal] OR \"Eur Respir J\"[Journal] OR \"Lancet\"[Journal] OR \"N Engl J Med\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal] OR \"Ann Intern Med\"[Journal] OR \"Proc Natl Acad Sci U S A\"[Journal] OR \"EMBO J\"[Journal] OR \"PLoS Biol*\"[Journal] OR \"Blood\"[Journal] OR \"Circulation\"[Journal])"
       ],
-      "recipients": ["persist2021@163.com"],
+      "recipients": ["example1@example.com"],
       "maxResults": 15,
       "daysBack": 7,
       "fallbackFromYear": 2020,
@@ -69,7 +69,7 @@
     {
       "name": "肺泡巨噬细胞-预印本",
       "keywords": ["alveolar macrophage", "macrophage", "lung immunity"],
-      "recipients": ["persist2021@163.com"],
+      "recipients": ["example1@example.com"],
       "maxResults": 10,
       "daysBack": 7,
       "sources": [],

@@ -1,58 +1,123 @@
 # Papfast - 学术论文订阅工具
 
-每日自动从 PubMed 抓取高质量论文，使用 LLM 进行深度分析翻译，以公众号风格邮件推送。
+每天自动从 PubMed（可选预印本源）抓取论文，使用 LLM 进行翻译与结构化分析，并以“公众号风格”邮件推送给指定收件人。
 
-## 功能特点
+---
 
-- 🔍 **智能检索**：基于关键词和高质量期刊列表筛选论文
-- 🌐 **自动翻译**：使用智谱 GLM-4-Plus 进行学术翻译
-- 📊 **深度分析**：LLM 驱动的"标题摘要预判系统"
-- 📧 **邮件推送**：公众号风格排版，支持多收件人
-- ⏰ **定时执行**：GitHub Actions 云端自动运行，无需本地设备
-- 🔄 **回退机制**：无新论文时自动搜索历史高质量文献
- - 🗂️ **报告导出**：每个模块每日自动生成 JSON 和 Markdown 报告，方便二次分析与对接其他系统
+## 功能概览
 
-## 部署方式
+- 🔍 **智能检索**：支持复杂 PubMed 检索语法，自定义关键词和时间范围。
+- 🌐 **自动翻译**：通过 LLM 将标题/摘要翻译成中文，保留医学术语。
+- 📊 **深度分析**：内置“科研论文标题摘要预判系统”，输出结构化分析结果。
+- 📧 **邮件推送**：生成微信公众号风格 HTML 邮件，可配置多收件人。
+- ⏰ **定时执行**：
+  - GitHub Actions 定时任务（云端自动跑，不依赖本地开机）
+  - 或本地 Windows 计划任务（`setup-schedule.ps1`）
+- 🔄 **去重与回退机制**：
+  - 使用本地 `data/sent-papers.json` 记录已推送论文，按 PMID/DOI 去重
+  - 近几天无新文时自动回退搜索“自某年起”的高质量历史文献
+- 🗂️ **报告导出**：每次运行为每个模块生成 JSON 和 Markdown 报告，方便二次分析与接入其他系统。
 
-### GitHub Actions（推荐）
+---
 
-1. **Fork 或克隆本仓库**
+## 快速开始（GitHub Actions，推荐）
 
-2. **配置 GitHub Secrets**
+### 1. Fork 本仓库
 
-   在 `Settings → Secrets and variables → Actions` 中添加：
+- 在 GitHub 上点击 `Fork`，创建你自己的副本（建议为 **私有仓库**，以保护你的订阅主题与运行数据）。
 
-   | Secret | 说明 |
-   |--------|------|
-   | `SMTP_HOST` | SMTP 服务器地址 |
-   | `SMTP_PORT` | SMTP 端口 |
-   | `SMTP_USER` | 发件邮箱 |
-   | `SMTP_PASS` | 邮箱授权码 |
-   | `LLM_API_KEY` | LLM API 密钥 |
-   | `EASYSCHOLAR_KEY` | easyScholar API 密钥（可选） |
+### 2. 配置 Secrets
 
-3. **启用 Workflow**
+在你的仓库中进入：`Settings → Secrets and variables → Actions → New repository secret`，添加：
 
-   - 进入 Actions 页面
-   - 启用 `Daily Paper Push` workflow
-   - 可手动触发测试
+| Secret            | 说明                       |
+|-------------------|----------------------------|
+| `SMTP_HOST`       | SMTP 服务器地址           |
+| `SMTP_PORT`       | SMTP 端口（如 `465`）     |
+| `SMTP_USER`       | 发件邮箱                   |
+| `SMTP_PASS`       | 邮箱授权码                 |
+| `LLM_API_KEY`     | LLM API 密钥              |
+| `EASYSCHOLAR_KEY` | easyScholar API 密钥（可选，不配就不查期刊等级） |
 
-4. **自动执行**
+GitHub Actions 会在运行时将这些值注入环境变量，代码通过 `config/config.json` 中的占位符（`${LLM_API_KEY}` 等）读取。
 
-   - 每天北京时间 7:00 自动运行
-   - 无需任何设备开机
+### 3. 配置订阅模块
 
-### 本地运行
+打开你仓库中的 `config/config.json`，按你的研究主题修改 `modules` 数组，例如：
+
+```json
+{
+  "name": "模块名称",
+  "keywords": ["your pubmed search string here"],
+  "recipients": ["example1@example.com"],
+  "maxResults": 15,
+  "daysBack": 7,
+  "fallbackFromYear": 2020,
+  "fallbackMaxResults": 10,
+  "enabled": true
+}
+```
+
+### 4. 启用并测试 Workflow
+
+- 在仓库页点击 `Actions`；
+- 找到 `Daily Paper Push` workflow，点击“Enable”；
+- 右上角点击 `Run workflow` 手动运行一遍：
+  - 检查 Actions 日志是否无报错；
+  - 检查收件箱是否收到测试日报邮件。
+
+> 默认定时执行时间在 `.github/workflows/daily.yml` 中配置为：  
+> `0 23 * * *`（UTC 23:00 ≈ 北京时间 7:00）。可按需修改。
+
+---
+
+## 本地运行（调试与自用）
+
+### 1. 安装依赖
 
 ```bash
-# 安装依赖
 npm install
+```
 
-# 配置 config/config.json（参考 config.local.json 模板）
+### 2. 准备本地配置（不会被提交）
 
-# 运行
+`config/config.local.json` 已加入 `.gitignore`，你可以在本地创建它，写入 **真实邮箱与 Key**，例如：
+
+```json
+{
+  "email": {
+    "smtp": {
+      "host": "smtp.example.com",
+      "port": 465,
+      "secure": true,
+      "user": "your_email@example.com",
+      "pass": "your_smtp_password"
+    },
+    "from": "your_email@example.com"
+  },
+  "llm": {
+    "enabled": true,
+    "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+    "apiKey": "your-llm-api-key",
+    "model": "glm-4-plus"
+  },
+  "modules": [
+    // 与 config.json 结构相同，可为本地测试单独配置
+  ]
+}
+```
+
+代码会优先加载 `config.local.json`；若不存在，则回退到 `config.json`。
+
+### 3. 手动运行
+
+```bash
 npm start
 ```
+
+如需在 Windows 上每天定时跑，可使用 `setup-schedule.ps1` 创建计划任务，该脚本会创建一个名为 `Papfast-Daily` 的任务，每天早上 7 点执行 `node src/index.js`。
+
+---
 
 ## 模块配置
 

@@ -1,0 +1,40 @@
+{
+  "date": "2026-03-04T11:36:14.754Z",
+  "module": "肺泡巨噬细胞-预印本",
+  "isFallback": false,
+  "fallbackFromYear": null,
+  "total": 1,
+  "stats": {
+    "pubmed": 0,
+    "preprints": 1
+  },
+  "papers": [
+    {
+      "index": 1,
+      "pmid": null,
+      "doi": "10.1101/2024.08.02.606358",
+      "isPreprint": true,
+      "source": "biorxiv",
+      "title": "ImPaqT - A Golden Gate-based Toolkit for Zebrafish Transgenesis",
+      "titleZh": "ImPaqT - 基于Golden Gate技术的斑马鱼转基因工具包",
+      "abstract": "Transgenic animals continue to play an essential role in many aspects of zebrafish research, including the development of disease models. The most widely used system for zebrafish transgenesis is the Tol2 transposon system. Here, we have developed ImPaqT (Immunological toolkit for PaqCI-based Golden Gate Assembly of Tol2 Transgenes), a new Tol2-based transgenesis system that utilizes Golden Gate assembly to facilitate the production of transgenic zebrafish lines. This system allows for rapid assembly of multiple fragments into a single transgene, facile swapping of individual sequences to generate new transgenes and an easy cloning workflow to incorporate new genetic elements into the existing kit. Within this toolkit framework, we have generated a number of reagents to enable gene expression within immune and non-immune cell types, an array of best-in-class fluorescent proteins to visualize cell populations and transgenes as well as tools to simplify genetic manipulation, purification and ablation of targeted cells. Unlike recombination-based systems, the Golden Gate approach is also expandable, allowing the incorporation of complex designs such as multi-fragment promoters within the established modular framework of ImPaqT. Here, we demonstrate the function of this new system by generating a number of novel transgenic immune reporter lines. While our toolkit is focused on the immune system as an emerging area of study within zebrafish research, the ImPaqT approach can be broadly adapted to the construction of almost any zebrafish transgene, offering new tools for the generation of transgenes within the zebrafish community.",
+      "abstractZh": "转基因动物在斑马鱼研究的多个方面继续发挥关键作用，包括疾病模型的开发。斑马鱼转基因技术中最广泛使用的系统是Tol2转座子系统。在此，我们开发了ImPaqT（基于PaqCI Golden Gate组装的Tol2转基因免疫学工具包），这是一种新的基于Tol2的转基因系统，利用Golden Gate组装技术促进转基因斑马鱼品系的产生。该系统允许将多个片段快速组装成单个转基因，轻松交换单个序列以生成新转基因，以及简化的克隆工作流程，将新的遗传元件整合到现有工具包中。在此工具包框架内，我们已生成多种试剂，用于免疫和非免疫细胞类型的基因表达，一系列最佳荧光蛋白用于可视化细胞群体和转基因，以及简化基因操作、靶细胞纯化和消融的工具。与基于重组的系统不同，Golden Gate方法也具有可扩展性，允许在ImPaqT既定的模块化框架内整合复杂设计，如多片段启动子。在此，我们通过生成多种新型转基因免疫报告品系来演示这一新系统的功能。虽然我们的工具包侧重于作为斑马鱼研究中新兴领域的免疫系统，但ImPaqT方法可广泛适应于构建几乎所有斑马鱼转基因，为斑马鱼研究界提供转基因生成的新工具。",
+      "journal": "bioRxiv",
+      "journalAbbr": "biorxiv",
+      "journalInfo": {
+        "rank": "preprint",
+        "impactFactor": null,
+        "note": "预印本 - 尚未经过同行评审"
+      },
+      "journalInfoText": "预印本",
+      "url": "https://doi.org/10.1101/2024.08.02.606358",
+      "keywords": [
+        "immunology"
+      ],
+      "keywordsZh": [
+        "免疫学"
+      ],
+      "deepAnalysis": null
+    }
+  ]
+}

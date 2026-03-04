@@ -1,0 +1,825 @@
+{
+  "lastUpdated": "2026-03-04T11:36:14.752Z",
+  "totalRecords": 91,
+  "papers": [
+    {
+      "key": "pmid:41772175",
+      "pmid": "41772175",
+      "doi": "10.1038/s41551-026-01613-x",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-03-04",
+      "title": "MyD88-mediated chimaeric antigen receptor macrophages suppress brain metastasis using target-specifi",
+      "isPreprint": false
+    },
+    {
+      "key": "doi:10.1101/2024.08.02.606358",
+      "pmid": null,
+      "doi": "10.1101/2024.08.02.606358",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-03-04",
+      "title": "ImPaqT - A Golden Gate-based Toolkit for Zebrafish Transgenesis",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2023.09.22.558524",
+      "pmid": null,
+      "doi": "10.1101/2023.09.22.558524",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-03-01",
+      "title": "RORγt+ B cells express proinflammatory cytokines and promote allo- and auto- immunity",
+      "isPreprint": true
+    },
+    {
+      "key": "pmid:37919524",
+      "pmid": "37919524",
+      "doi": "10.1038/s41590-023-01661-4",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-28",
+      "title": "SARS-CoV-2 viral persistence in lung alveolar macrophages is controlled by IFN-γ and NK cells.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41758935",
+      "pmid": "41758935",
+      "doi": "10.1126/sciadv.ady7317",
+      "module": "哮喘",
+      "date": "2026-02-28",
+      "title": "A beneficial environment promotes immune resilience through epigenetic regulation.",
+      "isPreprint": false
+    },
+    {
+      "key": "doi:10.1101/2024.09.26.615243",
+      "pmid": null,
+      "doi": "10.1101/2024.09.26.615243",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-28",
+      "title": "Detection of bacteria through taste receptors primes the cellular immune response",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.04.28.650959",
+      "pmid": null,
+      "doi": "10.1101/2025.04.28.650959",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-28",
+      "title": "Defining the ordered pathway for ZAP-mediated RNA decay",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.05.08.652875",
+      "pmid": null,
+      "doi": "10.1101/2025.05.08.652875",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-28",
+      "title": "Contrasting roles for IKK regulated inflammatory signalling pathways for development and maintenance",
+      "isPreprint": true
+    },
+    {
+      "key": "pmid:39367123",
+      "pmid": "39367123",
+      "doi": "10.1038/s41590-024-01975-x",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Profibrotic monocyte-derived alveolar macrophages are expanded in patients with persistent respirato",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39358361",
+      "pmid": "39358361",
+      "doi": "10.1038/s41467-024-52846-w",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "{\"_\":\"The frequency of CD38 alveolar macrophages correlates with early control of M. tuberculosis in",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39312670",
+      "pmid": "39312670",
+      "doi": "10.1073/pnas.2406294121",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Alveolar macrophage function is impaired following inhalation of berry e-cigarette vapor.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38671323",
+      "pmid": "38671323",
+      "doi": "10.1038/s41590-024-01830-z",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Apolipoprotein E controls Dectin-1-dependent development of monocyte-derived alveolar macrophages up",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38528148",
+      "pmid": "38528148",
+      "doi": "10.1038/s41564-024-01641-w",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "TOLLIP inhibits lipid accumulation and the integrated stress response in alveolar macrophages to con",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38484707",
+      "pmid": "38484707",
+      "doi": "10.1016/j.chom.2024.02.007",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Gut microbe guides alveolar macrophages to fight flu.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38295788",
+      "pmid": "38295788",
+      "doi": "10.1016/j.chom.2024.01.002",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Intestinal microbiota programming of alveolar macrophages influences severity of respiratory viral i",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38177117",
+      "pmid": "38177117",
+      "doi": "10.1038/s41467-023-44168-0",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Cullin5 drives experimental asthma exacerbations by modulating alveolar macrophage antiviral immunit",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38167746",
+      "pmid": "38167746",
+      "doi": "10.1038/s41467-023-44421-6",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-27",
+      "title": "Alveolar macrophage-expressed Plet1 is a driver of lung epithelial repair after viral pneumonia.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41686891",
+      "pmid": "41686891",
+      "doi": "10.1126/sciadv.adj4926",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "CBX7 functions as a methylation-dependent inducer of gene transcription and regulator of cytosolic s",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41738176",
+      "pmid": "41738176",
+      "doi": "10.1093/ajrccm/aamag031",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Switching to twice-yearly depemokimab from mepolizumab/benralizumab in severe asthma: A multicenter,",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41380684",
+      "pmid": "41380684",
+      "doi": "10.1016/j.immuni.2025.11.018",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Tolerance to ferroptosis facilitates lipid metabolism and pathogenic type 2 immunity in allergic air",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41644139",
+      "pmid": "41644139",
+      "doi": "10.1136/thorax-2024-222710",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Impact of air pollution on lung function in cystic fibrosis over a decade in London: a UK CF Registr",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41617609",
+      "pmid": "41617609",
+      "doi": "10.1136/thorax-2025-222965",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Airway microbiota in young people across four continents differ by country, asthma status and inflam",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41611251",
+      "pmid": "41611251",
+      "doi": "10.1183/13993003.01540-2025",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Tidal Breathing Nasal Nitric Oxide Measurement as a Test for Primary Ciliary Dyskinesia in Young Chi",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41738142",
+      "pmid": "41738142",
+      "doi": "10.1093/ajrccm/aamaf119",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Lower airway immunophenotyping in severe preschool wheeze reveals distinct clusters described by het",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41576136",
+      "pmid": "41576136",
+      "doi": "10.1126/sciimmunol.adk1673",
+      "module": "哮喘",
+      "date": "2026-02-27",
+      "title": "Epidermal growth factor receptor controls sex differences in lung type 2 responses to inhaled allerg",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:34607961",
+      "pmid": "34607961",
+      "doi": "10.1073/pnas.2113174118",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Tubular lysosomes harbor active ion gradients and poise macrophages for phagocytosis.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:34407943",
+      "pmid": "34407943",
+      "doi": "10.1126/sciadv.abg2712",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Invasion of phagocytic Galectin 3 expressing macrophages in the diabetic brain disrupts vascular rep",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:33376222",
+      "pmid": "33376222",
+      "doi": "10.1073/pnas.2015368117",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "{\"_\":\"Macrophage LC3-associated phagocytosis is an immune defense against  that diminishes with host",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:33268354",
+      "pmid": "33268354",
+      "doi": "10.1126/sciadv.abc8482",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Macrophage activation on \"phagocytic synapse\" arrays: Spacing of nanoclustered ligands directs TLR1/",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:32561889",
+      "pmid": "32561889",
+      "doi": "10.1038/s41596-020-0330-8",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Macrophage phagocytosis assay with reconstituted target particles.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:32219160",
+      "pmid": "32219160",
+      "doi": "10.1126/sciadv.aay3704",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Phagocytosis of Wnt inhibitor SFRP4 by late wound macrophages drives chronic Wnt activity for fibrot",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:32049051",
+      "pmid": "32049051",
+      "doi": "10.1016/j.immuni.2020.01.014",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "Blockade of the Phagocytic Receptor MerTK on Tumor-Associated Macrophages Enhances P2X7R-Dependent S",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:31900362",
+      "pmid": "31900362",
+      "doi": "10.1073/pnas.1915932117",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-27",
+      "title": "{\"_\":\"The clock gene  inhibits macrophage motility, phagocytosis, and impairs defense against pneumo",
+      "isPreprint": false
+    },
+    {
+      "key": "doi:10.1101/2025.07.15.664002",
+      "pmid": null,
+      "doi": "10.1101/2025.07.15.664002",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-27",
+      "title": "TREM2+ macrophages accumulate in alveoli of human pulmonary tuberculosis providing a permissive nich",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.09.12.675637",
+      "pmid": null,
+      "doi": "10.1101/2025.09.12.675637",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-27",
+      "title": "In situ evidence that mast cells release mutant NLRP1 in keratoacanthomas from multiple self-healing",
+      "isPreprint": true
+    },
+    {
+      "key": "pmid:40512793",
+      "pmid": "40512793",
+      "doi": "10.1073/pnas.2421672122",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "RACK1 promotes the development and function of alveolar macrophages through directly binding to and ",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40315300",
+      "pmid": "40315300",
+      "doi": "10.1126/sciimmunol.adl3852",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Cell type-specific efferocytosis determines functional plasticity of alveolar macrophages.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40064940",
+      "pmid": "40064940",
+      "doi": "10.1038/s41467-025-57668-y",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Alveolar macrophages from persons with HIV mount impaired TNF signaling networks to M. tuberculosis ",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39971937",
+      "pmid": "39971937",
+      "doi": "10.1038/s41467-025-57024-0",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "TREM2 promotes lung fibrosis via controlling alveolar macrophage survival and pro-fibrotic activity.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39541970",
+      "pmid": "39541970",
+      "doi": "10.1016/j.immuni.2024.10.002",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Sialylated IgG induces the transcription factor REST in alveolar macrophages to protect against lung",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39700136",
+      "pmid": "39700136",
+      "doi": "10.1073/pnas.2410954121",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Alveolar macrophages are early targets of mumps virus.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39580310",
+      "pmid": "39580310",
+      "doi": "10.1016/j.it.2024.11.002",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "SARS-CoV-2 reprograms murine alveolar macrophages to dampen flu.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39378878",
+      "pmid": "39378878",
+      "doi": "10.1016/j.cell.2024.09.016",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Lung-resident alveolar macrophages regulate the timing of breast cancer metastasis.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39353439",
+      "pmid": "39353439",
+      "doi": "10.1016/j.immuni.2024.08.018",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-26",
+      "title": "Antiviral innate immune memory in alveolar macrophages following SARS-CoV-2 infection ameliorates se",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:37580395",
+      "pmid": "37580395",
+      "doi": "10.1038/s41467-023-40635-w",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Toll-like receptor 4 and macrophage scavenger receptor 1 crosstalk regulates phagocytosis of a funga",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:37474548",
+      "pmid": "37474548",
+      "doi": "10.1038/s41467-023-39683-z",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Oncolytic viruses engineered to enforce cholesterol efflux restore tumor-associated macrophage phago",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:36995340",
+      "pmid": "36995340",
+      "doi": "10.1084/jem.20221472",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Phagocytosis increases an oxidative metabolic and immune suppressive signature in tumor macrophages.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:37058562",
+      "pmid": "37058562",
+      "doi": "10.1126/sciadv.adf8522",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "M2 macrophages drive leukemic transformation by imposing resistance to phagocytosis and improving mi",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:35484420",
+      "pmid": "35484420",
+      "doi": "10.1038/s43018-022-00354-5",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Macrophage mitochondrial fission improves cancer cell phagocytosis induced by therapeutic antibodies",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:35302839",
+      "pmid": "35302839",
+      "doi": "10.1126/sciadv.abl9171",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Promoting antibody-dependent cellular phagocytosis for effective macrophage-based cancer immunothera",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:35061505",
+      "pmid": "35061505",
+      "doi": "10.1126/sciimmunol.abj5501",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "SLAMF3 and SLAMF4 are immune checkpoints that constrain macrophage phagocytosis of hematopoietic tum",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:35122055",
+      "pmid": "35122055",
+      "doi": "10.1038/s43018-021-00267-9",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-26",
+      "title": "Pharmacological inhibition of BACE1 suppresses glioblastoma growth by stimulating macrophage phagocy",
+      "isPreprint": false
+    },
+    {
+      "key": "doi:10.1101/2023.01.26.525718",
+      "pmid": null,
+      "doi": "10.1101/2023.01.26.525718",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "The pharmacopeia of helminth-derived metabolites driving tolerance in dendritic cells",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2024.09.17.613246",
+      "pmid": null,
+      "doi": "10.1101/2024.09.17.613246",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "DNA-PK interacts with cyclic dinucleotides and inhibits type I Interferon responses",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.03.14.643374",
+      "pmid": null,
+      "doi": "10.1101/2025.03.14.643374",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "Systemic Multi-Omics Analysis Reveals Interferon Response Heterogeneity and Links Lipid Metabolism t",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.07.04.663219",
+      "pmid": null,
+      "doi": "10.1101/2025.07.04.663219",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "Estrogen Impacts Nod2-Dependent Regulation of Intestinal Homeostasis",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.10.14.680648",
+      "pmid": null,
+      "doi": "10.1101/2025.10.14.680648",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "Temporal control of feeding without reducing caloric intake attenuates allergic dermatitis in mice b",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.64898/2026.01.14.699581",
+      "pmid": null,
+      "doi": "10.64898/2026.01.14.699581",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-26",
+      "title": "Antigen-tethering proteins on follicular dendritic cells influence the affinity and diversity of ger",
+      "isPreprint": true
+    },
+    {
+      "key": "pmid:41620436",
+      "pmid": "41620436",
+      "doi": "10.1038/s41467-026-69000-3",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Microbiota-induced EI24 improves homeostasis but impedes function of alveolar macrophages via metabo",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41557892",
+      "pmid": "41557892",
+      "doi": "10.1182/blood.2025028733",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Plasmin modulates neutrophilic inflammation and alveolar macrophage function, protecting mice from p",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41534513",
+      "pmid": "41534513",
+      "doi": "10.1016/j.immuni.2025.12.003",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "IRF4 sends alveolar macrophages spiraling into an identity crisis during type 2 immunity.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41386231",
+      "pmid": "41386231",
+      "doi": "10.1016/j.immuni.2025.11.015",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Innate type 2 lymphocytes trigger an inflammatory switch in alveolar macrophages.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41481698",
+      "pmid": "41481698",
+      "doi": "10.1126/sciimmunol.adt8858",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Segmented filamentous bacteria reprogramming of alveolar macrophages limits postinfluenza bacterial ",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41433421",
+      "pmid": "41433421",
+      "doi": "10.1126/scisignal.adt1539",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "The mechanosensitive channel TRPV4 inhibits pulmonary inflammation by limiting NF-κB signaling in al",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41202119",
+      "pmid": "41202119",
+      "doi": "10.1126/sciadv.adx8586",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Alveolar macrophages initiate the spatially targeted recruitment of neutrophils after nanoparticle i",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40449484",
+      "pmid": "40449484",
+      "doi": "10.1016/j.immuni.2025.05.002",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "{\"_\":\"Nociceptor neurons suppress alveolar macrophage-induced Siglec-F neutrophil-mediated inflammat",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40527316",
+      "pmid": "40527316",
+      "doi": "10.1016/j.cmet.2025.05.012",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Itaconate promotes inflammatory responses in tissue-resident alveolar macrophages and exacerbates ac",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40639329",
+      "pmid": "40639329",
+      "doi": "10.1016/j.chom.2025.06.015",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-02-23",
+      "title": "Fungal cues, fibrotic consequences: Commensal sensing by alveolar macrophages promotes pulmonary fib",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41713950",
+      "pmid": "41713950",
+      "doi": "10.1183/13993003.02687-2025",
+      "module": "哮喘",
+      "date": "2026-02-23",
+      "title": "Obesity and asthma: obesity causes and aggravates asthma across the entire type-2 inflammation spect",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41713949",
+      "pmid": "41713949",
+      "doi": "10.1183/13993003.02358-2025",
+      "module": "哮喘",
+      "date": "2026-02-23",
+      "title": "The pathobiology and treatment of mucus plugs in asthma and COPD: state of the art.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41713945",
+      "pmid": "41713945",
+      "doi": "10.1183/13993003.00948-2025",
+      "module": "哮喘",
+      "date": "2026-02-23",
+      "title": "{\"_\":\"EcN-Sj16-Exo ameliorates experimental asthma by inhibiting eosinophil extracellular traps form",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41339088",
+      "pmid": "41339088",
+      "doi": "10.1136/thorax-2025-223961",
+      "module": "哮喘",
+      "date": "2026-02-23",
+      "title": "Blood eosinophil-guided systemic corticosteroid duration in adults hospitalised for asthma exacerbat",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:41249197",
+      "pmid": "41249197",
+      "doi": "10.1038/s41467-025-65945-z",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "Targeting tumor-intrinsic BCL9 reverses immunotherapy resistance by eliciting macrophage-mediated ph",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40675974",
+      "pmid": "40675974",
+      "doi": "10.1038/s41467-025-61348-2",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "Targeting CD37 promotes macrophage-dependent phagocytosis of multiple cancer cell types and facilita",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:40512837",
+      "pmid": "40512837",
+      "doi": "10.1126/sciimmunol.adn4302",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "PSGL-1 is a phagocytosis checkpoint that enables tumor escape from macrophage clearance.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39813319",
+      "pmid": "39813319",
+      "doi": "10.1126/scitranslmed.adl5800",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "Macrophage-specific in vivo RNA editing promotes phagocytosis and antitumor immunity in mice.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39453740",
+      "pmid": "39453740",
+      "doi": "10.1073/pnas.2414437121",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "Biomechanics of phagocytosis of red blood cells by macrophages in the human spleen.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:39294148",
+      "pmid": "39294148",
+      "doi": "10.1038/s41467-024-52453-9",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "β2 integrins impose a mechanical checkpoint on macrophage phagocytosis.",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38971872",
+      "pmid": "38971872",
+      "doi": "10.1038/s41467-024-49825-6",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "An in-situ peptide-antibody self-assembly to block CD47 and CD24 signaling enhances macrophage-media",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:38454157",
+      "pmid": "38454157",
+      "doi": "10.1038/s41590-024-01776-2",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "The receptor binding domain of SARS-CoV-2 Omicron subvariants targets Siglec-9 to decrease its immun",
+      "isPreprint": false
+    },
+    {
+      "key": "pmid:37095318",
+      "pmid": "37095318",
+      "doi": "10.1038/s41551-023-01031-3",
+      "module": "巨噬细胞吞噬",
+      "date": "2026-02-23",
+      "title": "Cooperative phagocytosis of solid tumours by macrophages triggers durable anti-tumour responses.",
+      "isPreprint": false
+    },
+    {
+      "key": "doi:10.1101/2023.10.25.564037",
+      "pmid": null,
+      "doi": "10.1101/2023.10.25.564037",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Human ADA2 deficiency is characterized by the absence of an intracellular hypoglycosylated form of a",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2024.05.26.593976",
+      "pmid": null,
+      "doi": "10.1101/2024.05.26.593976",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Identification and characterization of dietary antigens in oral tolerance",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2024.12.16.628649",
+      "pmid": null,
+      "doi": "10.1101/2024.12.16.628649",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Lipopolysaccharide stimulates dynamic changes in B cell metabolism to promote proliferation",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.01.22.634242",
+      "pmid": null,
+      "doi": "10.1101/2025.01.22.634242",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Motif-driven microRNA regulation of B cell tolerance uncovers ERα as a female-specific checkpoint",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.06.26.661795",
+      "pmid": null,
+      "doi": "10.1101/2025.06.26.661795",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Red Blood Cell Transfusion is a Non-Canonical Immune Stimulus Characterized by the Suboptimal Induct",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.09.23.677998",
+      "pmid": null,
+      "doi": "10.1101/2025.09.23.677998",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Redirection of SARS-CoV-2 to Phagocytes by Intranasal sACE2-Fc as a Universal Decoy Confers Complete",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.1101/2025.11.12.687655",
+      "pmid": null,
+      "doi": "10.1101/2025.11.12.687655",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "TRAIL orchestrates ThINKK-induced NK cell cytotoxicity against childhood acute lymphoblastic leukemi",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.64898/2026.01.27.702111",
+      "pmid": null,
+      "doi": "10.64898/2026.01.27.702111",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Nanobody MET CAR T cells show efficacy in solid tumors",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.64898/2026.02.03.703470",
+      "pmid": null,
+      "doi": "10.64898/2026.02.03.703470",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Comparative analysis of BCG vaccination routes in mice reveals preferential reprogramming of pulmona",
+      "isPreprint": true
+    },
+    {
+      "key": "doi:10.64898/2026.02.12.705547",
+      "pmid": null,
+      "doi": "10.64898/2026.02.12.705547",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-02-23",
+      "title": "Generative AI Guided Design of High-Affinity T cell Receptors",
+      "isPreprint": true
+    }
+  ]
+}

@@ -19,6 +19,7 @@ import { analyzeAllPapers } from './analyze.js';
 import { sendPaperEmail } from './email.js';
 import { getJournalRanks, formatJournalInfo } from './journal-rank.js';
 import { filterUnsentPapers, preRecordPapers, recordSentPapers } from './sent-papers.js';
+import { saveRunReport } from './report.js';
 import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -229,7 +230,17 @@ async function processModule(module) {
   }
   
   console.log(`\n[发送] ${module.name}: ${papersToSend.filter(p => !p.isPreprint).length} 篇论文 + ${papersToSend.filter(p => p.isPreprint).length} 篇预印本`);
-  
+
+  // 导出本次运行报告（JSON + Markdown），便于后续复盘或二次使用
+  const now = new Date();
+  await saveRunReport({
+    moduleName: module.name,
+    date: now,
+    papers: papersToSend,
+    isFallback,
+    fallbackYear
+  });
+
   try {
     await sendPaperEmail(papersToSend, module.name, module.recipients, isFallback, fallbackYear);
     console.log(`\n[完成] ${module.name} 处理完毕`);

@@ -10,6 +10,7 @@
 - 📧 **邮件推送**：公众号风格排版，支持多收件人
 - ⏰ **定时执行**：GitHub Actions 云端自动运行，无需本地设备
 - 🔄 **回退机制**：无新论文时自动搜索历史高质量文献
+ - 🗂️ **报告导出**：每个模块每日自动生成 JSON 和 Markdown 报告，方便二次分析与对接其他系统
 
 ## 部署方式
 
@@ -123,17 +124,29 @@ Papfast/
 ├── src/
 │   ├── index.js           # 主程序入口
 │   ├── fetch.js           # PubMed 数据抓取
+│   ├── fetch-preprint.js  # 预印本抓取 (bioRxiv / medRxiv)
 │   ├── translate.js       # 论文翻译
 │   ├── analyze.js         # LLM 深度分析
 │   ├── email.js           # 邮件发送
 │   ├── wechat-style.js    # 公众号风格格式化
 │   ├── journal-rank.js    # 期刊等级查询
+│   ├── report.js          # JSON / Markdown 报告导出
 │   └── prompts/
 │       └── literature-analysis.js  # 分析提示词
+├── data/
+│   ├── sent-papers.json   # 已推送论文记录（去重使用）
+│   └── reports/           # 每日导出的 JSON / Markdown 报告
 ├── memory/                # 项目记忆（可选）
 ├── package.json
 └── README.md
 ```
+
+### 报告导出说明
+
+- 每次模块成功生成推送列表后，会在 `data/reports/` 下生成两类文件：
+  - `YYYY-MM-DD__<module>.json`：结构化结果（包括标题、翻译、期刊信息、深度分析等），适合程序消费
+  - `YYYY-MM-DD__<module>.md`：人类可读的 Markdown 日报，便于复盘或同步到知识库
+- 文件名中的 `<module>` 由模块名称转换而来（空格与特殊字符会被标准化处理）。
 
 ## 费用说明
 

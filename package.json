@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node src/index.js",
     "fetch": "node src/fetch.js",
-    "test-email": "node src/test-email.js"
+    "test-email": "node src/test-email.js",
+    "detect:subscriptions": "node src/detect-subscriptions.js",
+    "setup:subscription": "node src/setup-subscription.js"
   },
   "dependencies": {
     "nodemailer": "^6.9.8",

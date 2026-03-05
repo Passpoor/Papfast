@@ -4,26 +4,28 @@ on:
   schedule:
     # UTC 23:00 = 北京时间 7:00
     - cron: '0 23 * * *'
-  # 支持手动触发
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   push-papers:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Run Papfast
         run: npm start
         env:
@@ -34,7 +36,23 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           EASYSCHOLAR_KEY: ${{ secrets.EASYSCHOLAR_KEY }}
 
-      # 说明：
-      # 公共仓库默认不再自动把 data/sent-papers.json 提交回仓库，以避免泄露个人订阅历史。
-      # 如果你在自己的私有 fork 中希望启用基于 GitHub Actions 的跨天去重，
-      # 可以在私有仓库中添加一个额外步骤，将 data/sent-papers.json 提交回去。
+      - name: Persist sent-papers state (private repo only)
+        if: ${{ github.event.repository.private }}
+        shell: bash
+        run: |
+          if [ ! -f data/sent-papers.json ]; then
+            echo "No sent-papers file generated, skip persist."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/sent-papers.json
+
+          if git diff --cached --quiet; then
+            echo "No dedup-state change to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: persist sent papers state [skip ci]"
+          git push

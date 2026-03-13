@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papfast Config Builder</title>
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --panel: #fffaf2;
+      --ink: #1f2a24;
+      --muted: #5d6a61;
+      --line: #d8ccb8;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --danger: #b91c1c;
+      --note: #eef6f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.16), transparent 25%),
+        radial-gradient(circle at top right, rgba(180, 83, 9, 0.14), transparent 20%),
+        linear-gradient(180deg, #f8f3ec 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    .hero {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .hero p { margin: 0; color: var(--muted); max-width: 860px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 14px 40px rgba(31, 42, 36, 0.06);
+      margin-bottom: 18px;
+    }
+    .guide {
+      background: var(--note);
+      border: 1px solid #cde3df;
+      border-radius: 16px;
+      padding: 16px;
+      color: #24423c;
+    }
+    .guide ol, .guide ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    label {
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    textarea { min-height: 90px; resize: vertical; }
+    .module-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      background: rgba(255,255,255,0.7);
+      margin-bottom: 14px;
+    }
+    .module-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .module-title { font-weight: 700; }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      cursor: pointer;
+      color: white;
+      background: var(--accent);
+    }
+    button.secondary { background: var(--accent-2); }
+    button.ghost {
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid var(--line);
+    }
+    button.danger { background: var(--danger); }
+    .two-col {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .output {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+      background: #fcfcfb;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      min-height: 220px;
+      overflow: auto;
+    }
+    .hint { color: var(--muted); font-size: 13px; }
+    .inline-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+    }
+    .inline-check input { width: auto; }
+    .field-guide {
+      margin-top: 4px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: #f7f3ec;
+      color: #566158;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+    .field-guide strong { color: var(--ink); }
+    code { font-family: Consolas, Monaco, monospace; }
+    @media (max-width: 860px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Papfast Config Builder</h1>
+      <p>这是给私有仓库使用的可视化配置页。你可以在这里填写真实 SMTP、LLM、多模块订阅条件，然后直接生成 <code>config.local.json</code> 和 GitHub Secret 所需的 Base64 文本。</p>
+    </section>
+
+    <section class="panel guide">
+      <h2>怎么用</h2>
+      <ol>
+        <li>先填写下面的全局配置：SMTP、发件邮箱、LLM。</li>
+        <li>再添加一个或多个模块，每个模块对应一组论文订阅主题。</li>
+        <li>点 <code>Generate Config</code>，检查右侧生成结果。</li>
+        <li>点 <code>Copy Base64 Secret</code>。</li>
+        <li>去私有仓库 GitHub 页面，进入 <code>Settings → Secrets and variables → Actions → Secrets</code>，新建 Secret：<code>PAPFAST_CONFIG_JSON_BASE64</code>，把刚才复制的内容粘进去。</li>
+        <li>再去 <code>Settings → Secrets and variables → Actions → Variables</code>，确认变量 <code>PAPFAST_PERSIST_STATE=true</code>。</li>
+        <li>最后在 GitHub Actions 里手动运行一次 <code>Daily Paper Push</code>。</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>全局配置</h2>
+      <div class="grid">
+        <label>SMTP Host
+          <input id="smtpHost" placeholder="smtp.qq.com / smtp.163.com / smtp.gmail.com">
+          <div class="field-guide"><strong>去哪找：</strong>去你的邮箱服务商 SMTP 帮助页。常见示例：QQ 邮箱是 <code>smtp.qq.com</code>，163 邮箱是 <code>smtp.163.com</code>，Gmail 是 <code>smtp.gmail.com</code>。</div>
+        </label>
+        <label>SMTP Port
+          <input id="smtpPort" type="number" value="465">
+          <div class="field-guide"><strong>怎么填：</strong>大多数 SSL SMTP 用 <code>465</code>，STARTTLS 常见是 <code>587</code>。</div>
+        </label>
+        <label>SMTP User
+          <input id="smtpUser" placeholder="your@email.com">
+          <div class="field-guide"><strong>怎么填：</strong>一般就是发件邮箱地址本身。</div>
+        </label>
+        <label>SMTP Password / Auth Code
+          <input id="smtpPass" type="password">
+          <div class="field-guide"><strong>去哪找：</strong>通常不是邮箱登录密码，而是邮箱后台开启 SMTP 后生成的“授权码”或“应用专用密码”。</div>
+        </label>
+        <label>From Email
+          <input id="emailFrom" placeholder="your@email.com">
+          <div class="field-guide"><strong>怎么填：</strong>一般与 <code>SMTP User</code> 相同。如果留空，会自动使用上面的 SMTP User。</div>
+        </label>
+        <label>LLM Base URL
+          <input id="llmBaseUrl" value="https://open.bigmodel.cn/api/paas/v4">
+          <div class="field-guide"><strong>怎么填：</strong>默认是智谱 GLM 平台地址。如果你用别的兼容 OpenAI 接口服务，就填对应基础地址。</div>
+        </label>
+        <label>LLM API Key
+          <input id="llmApiKey" type="password">
+          <div class="field-guide"><strong>去哪找：</strong>去你所用 LLM 平台后台创建 API Key。当前默认适配智谱 GLM。</div>
+        </label>
+        <label>LLM Model
+          <input id="llmModel" value="glm-4-plus">
+          <div class="field-guide"><strong>怎么填：</strong>填平台支持的模型名，例如 <code>glm-4-plus</code>。</div>
+        </label>
+        <label>easyScholar Key（可选）
+          <input id="easyScholarKey">
+          <div class="field-guide"><strong>作用：</strong>用于查询期刊等级。如果没有，可以留空，不影响主流程。</div>
+        </label>
+      </div>
+      <div class="row">
+        <label class="inline-check"><input id="llmEnabled" type="checkbox" checked>启用 LLM 分析</label>
+        <label class="inline-check"><input id="smtpSecure" type="checkbox" checked>使用安全 SMTP</label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="module-head">
+        <div>
+          <h2>订阅模块</h2>
+          <div class="hint">每个模块就是一组检索条件 + 一组收件人。可以加多个模块。</div>
+        </div>
+        <button id="addModule" type="button">添加模块</button>
+      </div>
+      <div id="modules"></div>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <button id="build" type="button">生成配置</button>
+        <button id="download" class="secondary" type="button">下载 config.local.json</button>
+        <button id="copyJson" class="ghost" type="button">复制 JSON</button>
+        <button id="copyBase64" class="ghost" type="button">复制 Base64 Secret</button>
+      </div>
+      <p class="hint">如果你要配置私有仓库 GitHub Actions，只需要把右侧 Base64 结果粘贴到 Secret <code>PAPFAST_CONFIG_JSON_BASE64</code>。页面不会自动上传任何信息。</p>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
+        <h3>config.local.json</h3>
+        <div id="jsonOutput" class="output"></div>
+      </div>
+      <div class="panel">
+        <h3>Base64 Secret</h3>
+        <div id="base64Output" class="output"></div>
+      </div>
+    </section>
+  </div>
+
+  <template id="moduleTemplate">
+    <div class="module-card">
+      <div class="module-head">
+        <div class="module-title">模块</div>
+        <button type="button" class="danger remove-module">删除</button>
+      </div>
+      <div class="grid">
+        <label>模块名
+          <input data-field="name" placeholder="肺泡巨噬细胞">
+          <div class="field-guide"><strong>怎么填：</strong>填你自己能看懂的主题名，例如“肺泡巨噬细胞”“肿瘤免疫”“肺纤维化”。</div>
+        </label>
+        <label>收件人（逗号分隔）
+          <input data-field="recipients" placeholder="a@example.com,b@example.com">
+          <div class="field-guide"><strong>怎么填：</strong>多个邮箱用英文逗号分隔。这个模块的邮件会发给这里的人。</div>
+        </label>
+        <label>最大返回数
+          <input data-field="maxResults" type="number" value="15">
+          <div class="field-guide"><strong>建议：</strong>通常填 <code>10</code> 到 <code>20</code>。太大时邮件会很长。</div>
+        </label>
+        <label>回看天数
+          <input data-field="daysBack" type="number" value="7">
+          <div class="field-guide"><strong>作用：</strong>搜索最近几天的新文献。通常填 <code>7</code>。</div>
+        </label>
+        <label>回溯起始年份
+          <input data-field="fallbackFromYear" type="number" value="2020">
+          <div class="field-guide"><strong>作用：</strong>如果最近几天没新文献，就从这个年份开始回溯老文献。</div>
+        </label>
+        <label>回溯最大返回数
+          <input data-field="fallbackMaxResults" type="number" value="10">
+          <div class="field-guide"><strong>建议：</strong>通常填 <code>5</code> 到 <code>10</code>。</div>
+        </label>
+      </div>
+      <label style="margin-top:14px;">PubMed 检索式（每行一条）
+        <textarea data-field="keywords" placeholder="(&quot;alveolar macrophag*&quot;[Title]) AND (&quot;Nature&quot;[Journal])"></textarea>
+        <div class="field-guide"><strong>去哪写：</strong>先去 <code>https://pubmed.ncbi.nlm.nih.gov/</code> 手动试搜，确认结果合理后，把检索式粘到这里。每行一条，Papfast 会逐条搜索。</div>
+      </label>
+      <div class="row">
+        <label class="inline-check"><input data-field="enabled" type="checkbox" checked>启用这个模块</label>
+        <label class="inline-check"><input data-field="preprintEnabled" type="checkbox">启用预印本</label>
+      </div>
+      <div class="grid preprint-grid" hidden>
+        <label>预印本服务器
+          <select data-field="preprintServer">
+            <option value="biorxiv">bioRxiv</option>
+            <option value="medrxiv">medRxiv</option>
+          </select>
+          <div class="field-guide"><strong>怎么选：</strong>生命科学偏 <code>bioRxiv</code>，医学临床偏 <code>medRxiv</code>。</div>
+        </label>
+        <label>预印本分类
+          <input data-field="preprintCategory" placeholder="immunology">
+          <div class="field-guide"><strong>怎么填：</strong>填对应站点支持的分类，例如 <code>immunology</code>、<code>cell biology</code>。不确定可以先留空。</div>
+        </label>
+        <label>预印本回看天数
+          <input data-field="preprintDaysBack" type="number" value="7">
+        </label>
+        <label>预印本最大返回数
+          <input data-field="preprintMaxResults" type="number" value="10">
+        </label>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    const modulesEl = document.getElementById('modules');
+    const template = document.getElementById('moduleTemplate');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const base64Output = document.getElementById('base64Output');
+
+    function splitList(value) {
+      return String(value || '')
+        .split(',')
+        .map(item => item.trim())
+        .filter(Boolean);
+    }
+
+    function splitLines(value) {
+      return String(value || '')
+        .split(/\r?\n/)
+        .map(item => item.trim())
+        .filter(Boolean);
+    }
+
+    function numberValue(input, fallback) {
+      const value = Number(input);
+      return Number.isFinite(value) && value > 0 ? value : fallback;
+    }
+
+    function addModule(seed = {}) {
+      const fragment = template.content.cloneNode(true);
+      const card = fragment.querySelector('.module-card');
+      const enabledPreprint = card.querySelector('[data-field="preprintEnabled"]');
+      const preprintGrid = card.querySelector('.preprint-grid');
+
+      const set = (field, value) => {
+        const input = card.querySelector(`[data-field="${field}"]`);
+        if (!input) return;
+        if (input.type === 'checkbox') {
+          input.checked = Boolean(value);
+        } else {
+          input.value = value ?? '';
+        }
+      };
+
+      set('name', seed.name || '');
+      set('recipients', (seed.recipients || []).join(','));
+      set('maxResults', seed.maxResults || 15);
+      set('daysBack', seed.daysBack || 7);
+      set('fallbackFromYear', seed.fallbackFromYear || 2020);
+      set('fallbackMaxResults', seed.fallbackMaxResults || 10);
+      set('keywords', (seed.keywords || []).join('\n'));
+      set('enabled', seed.enabled !== false);
+      set('preprintEnabled', Boolean(seed.preprint && seed.preprint.enabled));
+      set('preprintServer', seed.preprint?.server || 'biorxiv');
+      set('preprintCategory', seed.preprint?.category || '');
+      set('preprintDaysBack', seed.preprint?.daysBack || 7);
+      set('preprintMaxResults', seed.preprint?.maxResults || 10);
+
+      function syncPreprint() {
+        preprintGrid.hidden = !enabledPreprint.checked;
+      }
+      enabledPreprint.addEventListener('change', syncPreprint);
+      syncPreprint();
+
+      card.querySelector('.remove-module').addEventListener('click', () => {
+        card.remove();
+      });
+
+      modulesEl.appendChild(card);
+    }
+
+    function buildConfig() {
+      const config = {
+        email: {
+          smtp: {
+            host: document.getElementById('smtpHost').value.trim(),
+            port: numberValue(document.getElementById('smtpPort').value, 465),
+            secure: document.getElementById('smtpSecure').checked,
+            user: document.getElementById('smtpUser').value.trim(),
+            pass: document.getElementById('smtpPass').value
+          },
+          from: document.getElementById('emailFrom').value.trim() || document.getElementById('smtpUser').value.trim()
+        },
+        llm: {
+          enabled: document.getElementById('llmEnabled').checked,
+          baseUrl: document.getElementById('llmBaseUrl').value.trim(),
+          apiKey: document.getElementById('llmApiKey').value.trim(),
+          model: document.getElementById('llmModel').value.trim()
+        },
+        modules: []
+      };
+
+      const easyScholarKey = document.getElementById('easyScholarKey').value.trim();
+      if (easyScholarKey) {
+        config.easyScholarKey = easyScholarKey;
+      }
+
+      modulesEl.querySelectorAll('.module-card').forEach(card => {
+        const module = {
+          name: card.querySelector('[data-field="name"]').value.trim(),
+          keywords: splitLines(card.querySelector('[data-field="keywords"]').value),
+          recipients: splitList(card.querySelector('[data-field="recipients"]').value),
+          maxResults: numberValue(card.querySelector('[data-field="maxResults"]').value, 15),
+          daysBack: numberValue(card.querySelector('[data-field="daysBack"]').value, 7),
+          fallbackFromYear: numberValue(card.querySelector('[data-field="fallbackFromYear"]').value, 2020),
+          fallbackMaxResults: numberValue(card.querySelector('[data-field="fallbackMaxResults"]').value, 10),
+          enabled: card.querySelector('[data-field="enabled"]').checked
+        };
+
+        if (card.querySelector('[data-field="preprintEnabled"]').checked) {
+          module.sources = [];
+          module.preprint = {
+            enabled: true,
+            server: card.querySelector('[data-field="preprintServer"]').value,
+            category: card.querySelector('[data-field="preprintCategory"]').value.trim() || undefined,
+            daysBack: numberValue(card.querySelector('[data-field="preprintDaysBack"]').value, 7),
+            maxResults: numberValue(card.querySelector('[data-field="preprintMaxResults"]').value, 10)
+          };
+        }
+
+        config.modules.push(module);
+      });
+
+      return config;
+    }
+
+    function render() {
+      const config = buildConfig();
+      const json = JSON.stringify(config, null, 2);
+      const base64 = btoa(unescape(encodeURIComponent(json)));
+      jsonOutput.textContent = json;
+      base64Output.textContent = base64;
+      return { json, base64 };
+    }
+
+    document.getElementById('addModule').addEventListener('click', () => addModule());
+    document.getElementById('build').addEventListener('click', render);
+
+    document.getElementById('download').addEventListener('click', () => {
+      const { json } = render();
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'config.local.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    async function copyFrom(id) {
+      const { json, base64 } = render();
+      const text = id === 'jsonOutput' ? json : base64;
+      await navigator.clipboard.writeText(text);
+    }
+
+    document.getElementById('copyJson').addEventListener('click', () => copyFrom('jsonOutput'));
+    document.getElementById('copyBase64').addEventListener('click', () => copyFrom('base64Output'));
+
+    addModule({
+      name: '肺泡巨噬细胞',
+      keywords: ['("alveolar macrophag*"[Title]) AND ("Nature"[Journal] OR "Science"[Journal] OR "Cell"[Journal])'],
+      recipients: ['you@example.com']
+    });
+    render();
+  </script>
+</body>
+</html>

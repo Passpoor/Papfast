@@ -26,6 +26,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Write private config
+        if: ${{ secrets.PAPFAST_CONFIG_JSON_BASE64 != '' }}
+        shell: bash
+        run: |
+          mkdir -p config
+          echo "${{ secrets.PAPFAST_CONFIG_JSON_BASE64 }}" | base64 --decode > config/config.local.json
+
       - name: Run Papfast
         run: npm start
         env:

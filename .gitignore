@@ -1,4 +1,4 @@
-# Dependencies
+﻿# Dependencies
 node_modules/
 
 # Local config (with real secrets)
@@ -26,5 +26,6 @@ Thumbs.db
 .env
 .env.local
 config/config.local.json
-data/*
-!data/sent-papers.json
+
+# Runtime data should stay private by default
+/data/

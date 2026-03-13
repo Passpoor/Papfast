@@ -1,4 +1,4 @@
-name: Daily Paper Push
+﻿name: Daily Paper Push
 
 on:
   schedule:
@@ -37,6 +37,7 @@ jobs:
           EASYSCHOLAR_KEY: ${{ secrets.EASYSCHOLAR_KEY }}
 
       - name: Persist sent-papers state
+        if: ${{ vars.PAPFAST_PERSIST_STATE == 'true' }}
         shell: bash
         run: |
           if [ ! -f data/sent-papers.json ]; then

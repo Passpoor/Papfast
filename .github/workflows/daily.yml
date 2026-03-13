@@ -36,14 +36,15 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           EASYSCHOLAR_KEY: ${{ secrets.EASYSCHOLAR_KEY }}
 
-      - name: Persist sent-papers state (private repo only)
-        if: ${{ github.event.repository.private }}
+      - name: Persist sent-papers state
         shell: bash
         run: |
           if [ ! -f data/sent-papers.json ]; then
             echo "No sent-papers file generated, skip persist."
             exit 0
           fi
+
+          rm -f data/sent-papers.json.tmp
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -55,4 +56,5 @@ jobs:
           fi
 
           git commit -m "chore: persist sent papers state [skip ci]"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"

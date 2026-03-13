@@ -1,0 +1,1554 @@
+{
+  "lastUpdated": "2026-03-13T01:38:26.859Z",
+  "totalRecords": 172,
+  "papers": [
+    {
+      "key": "示例模块 c::pmid:41818796",
+      "pmid": "41818796",
+      "doi": "10.1098/rsif.2025.0751",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "ROPE: a novel method for real-time phase estimation of complex biological rhythms.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818793",
+      "pmid": "41818793",
+      "doi": "10.1098/rsif.2025.0911",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Macro-micro synergistic mechanisms of Curculio rostrum against buckling.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818724",
+      "pmid": "41818724",
+      "doi": "10.1093/humrep/deag030",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Experiences of infertility-related traumatic events and their association with symptoms of Post-Trau",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818370",
+      "pmid": "41818370",
+      "doi": "10.1126/science.aec1778",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Autophagolysosomal exocytosis inverts Src kinase onto the cell surface in cancer.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818336",
+      "pmid": "41818336",
+      "doi": "10.1093/evolut/qpag043",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Universal bacterial clade dynamics dominate under predation despite altered phenotypes and mutation ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818311",
+      "pmid": "41818311",
+      "doi": "10.1093/femsre/fuag011",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "The Ancient E-ring in Bacterial Flagellar Motors.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818152",
+      "pmid": "41818152",
+      "doi": "10.1073/pnas.2527851123",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Acoustic Pancharatnam-Berry geometric phase for structured sound manipulation.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41818028",
+      "pmid": "41818028",
+      "doi": "10.1109/TCYB.2026.3667035",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Fully Actuated System Approach-Based Tracking Control for High-Order Nonlinear System Under False Da",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817978",
+      "pmid": "41817978",
+      "doi": "10.1021/jacs.5c21952",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Tailored Spin Coupling of Single-Molecule Magnets with a Single Charge-Density-Wave Metal Layer.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817966",
+      "pmid": "41817966",
+      "doi": "10.1109/TPAMI.2026.3673141",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "SELongVLM: Empowering Long Video Language Models with Self-Corrective Clip Selection.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817728",
+      "pmid": "41817728",
+      "doi": "10.1007/s00122-026-05198-6",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Integrating genomic prediction into crop DUS testing: new approaches in support of reference collect",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817692",
+      "pmid": "41817692",
+      "doi": "10.1093/chidev/aacaf024",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Investigating causal questions about temporal and cumulative developmental effects: An introduction ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817686",
+      "pmid": "41817686",
+      "doi": "10.1007/s00048-026-00446-8",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Technology Acceptance from Above and Below. Negotiations of Energy Saving, Statehood, and Distributi",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817681",
+      "pmid": "41817681",
+      "doi": "10.57264/cer-2025-0119",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Personalized management of angina and heart failure in clinical practice in the Middle East: a narra",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41817390",
+      "pmid": "41817390",
+      "doi": "10.1093/aob/mcag011",
+      "module": "示例模块 C",
+      "date": "2026-03-13",
+      "title": "Late Cretaceous origins for major nightshade lineages from total-evidence timetree analysis.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2025.08.18.670983",
+      "pmid": null,
+      "doi": "10.1101/2025.08.18.670983",
+      "module": "示例预印本模块",
+      "date": "2026-03-13",
+      "title": "Bivalent mRNA booster encoding virus-like particles elicits potent polyclass receptor-binding domain",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2025.08.20.671208",
+      "pmid": null,
+      "doi": "10.1101/2025.08.20.671208",
+      "module": "示例预印本模块",
+      "date": "2026-03-13",
+      "title": "LFA-1 Interaction with GBP-130 on Plasmodium falciparum-infected Red Blood Cells mediates NK Cell Ac",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2025.10.24.684336",
+      "pmid": null,
+      "doi": "10.1101/2025.10.24.684336",
+      "module": "示例预印本模块",
+      "date": "2026-03-13",
+      "title": "Spatial Regulation of Lck Activation at the CD8 Immune Synapse Revealed by a FRET-Based Biosensor",
+      "isPreprint": true
+    },
+    {
+      "key": "test-sub::pmid:41807281",
+      "pmid": "41807281",
+      "doi": "10.1080/22221751.2026.2640283",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41734270",
+      "pmid": "41734270",
+      "doi": "10.1080/22221751.2026.2637292",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "An Rv1471-expressing chimpanzee adenovirus vaccine confers protection against tuberculosis by induci",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41818624",
+      "pmid": "41818624",
+      "doi": "10.7189/jogh.16.05001",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "Implementation research on enhanced community case management of pneumonia in Bangladesh: study prot",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41818244",
+      "pmid": "41818244",
+      "doi": "10.1371/journal.pone.0344258",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "A randomized assessment of the impact of 'Those Nerdy Girls' newsletters on adult vaccination outcom",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41818230",
+      "pmid": "41818230",
+      "doi": "10.1371/journal.pone.0344745",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "Economic shocks, food insufficiency and mental health: Evidence from the COVID-19 pandemic.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41818202",
+      "pmid": "41818202",
+      "doi": "10.1371/journal.pone.0340668",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "Enhancing recruitment and retention strategies in human tobacco research.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41818200",
+      "pmid": "41818200",
+      "doi": "10.1371/journal.pone.0340644",
+      "module": "test-sub",
+      "date": "2026-03-13",
+      "title": "A cluster of acidic residues in the cytoplasmic domain of SARS-CoV-2 Spike is required for virion-in",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806298",
+      "pmid": "41806298",
+      "doi": "10.1002/ohn.70159",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Selective Harm Reporting in Inflammatory Sinonasal Trials: A Systematic Review of Registry-Publicati",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806279",
+      "pmid": "41806279",
+      "doi": "10.1007/s12325-026-03512-8",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806176",
+      "pmid": "41806176",
+      "doi": "10.1002/smll.202512262",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Circularly Polarized Luminescence (CPL)-Active Homo- and Heterostructures by Surface-Catalyzed Secon",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806137",
+      "pmid": "41806137",
+      "doi": "10.1007/s11548-026-03583-6",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Exploring video recognition models for force estimation in small bowel surgical retractions.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806106",
+      "pmid": "41806106",
+      "doi": "10.1007/s13346-026-02093-x",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Overcoming the oral delivery challenges of venetoclax: advancing a clinically improved Bcl-2 inhibit",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41806017",
+      "pmid": "41806017",
+      "doi": "10.1039/d5tb02000j",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Control of site-specific deprotonation through mechanochemical interconversion of two ionic cocrysta",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805792",
+      "pmid": "41805792",
+      "doi": "10.1371/journal.pbio.3003605",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Cis-regulatory evolution of Wnt family genes contributes to a morphological difference between silkw",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805717",
+      "pmid": "41805717",
+      "doi": "10.1371/journal.pone.0344577",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Visual search for people wearing protective clothing in a forestial environment - Differences betwee",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805639",
+      "pmid": "41805639",
+      "doi": "10.1080/21645515.2026.2627097",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Safety, immunogenicity, and effectiveness of the MAV/06 varicella vaccine: A comprehensive review of",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805630",
+      "pmid": "41805630",
+      "doi": "10.7554/eLife.105165",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805531",
+      "pmid": "41805531",
+      "doi": "10.1109/TNNLS.2026.3669864",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "A Neural-Network-Assisted Approach to Recursive State Estimation for Energy Harvesting Complex Netwo",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805530",
+      "pmid": "41805530",
+      "doi": "10.1109/TNNLS.2026.3669910",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Coupled Impulsive Control for Multisynchronization of Multistable Stochastic Neural Networks Under P",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805511",
+      "pmid": "41805511",
+      "doi": "10.1109/TCYB.2026.3671125",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Neural-Network-Based State Estimation for Nonlinear Stochastic Systems Under Token Bucket Communicat",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805504",
+      "pmid": "41805504",
+      "doi": "10.1109/TNSRE.2026.3672459",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "Multiscale Node-Edge Interactions in Complex Networks: A Case Study Using Brain Network.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41805133",
+      "pmid": "41805133",
+      "doi": "10.1039/d5cc07392h",
+      "module": "示例模块 C",
+      "date": "2026-03-11",
+      "title": "π-Stacked dimerization of an antiaromatic homoHPHAC monocation.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2025.11.26.690690",
+      "pmid": null,
+      "doi": "10.1101/2025.11.26.690690",
+      "module": "示例预印本模块",
+      "date": "2026-03-11",
+      "title": "Human monoclonal antibodies that target the SFTSV glycoprotein Gn head from four neutralizing epitop",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.03.01.708910",
+      "pmid": null,
+      "doi": "10.64898/2026.03.01.708910",
+      "module": "示例预印本模块",
+      "date": "2026-03-11",
+      "title": "Intestinal intraepithelial lymphocyte migration and tissue homeostasis are dictated by Gα13",
+      "isPreprint": true
+    },
+    {
+      "key": "test-sub::pmid:41733099",
+      "pmid": "41733099",
+      "doi": "10.1021/acsnano.5c18916",
+      "module": "test-sub",
+      "date": "2026-03-11",
+      "title": "Engineering Smart Bimetallic Ionic-Site MOF Nanozyme Nanocomposites for Microenvironment-Responsive ",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41806055",
+      "pmid": "41806055",
+      "doi": "10.1007/s12308-026-00688-4",
+      "module": "test-sub",
+      "date": "2026-03-11",
+      "title": "ALK-positive, EBV-positive Large B-cell lymphoma in an HIV patient: a diagnostic pitfall mimicking p",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41805702",
+      "pmid": "41805702",
+      "doi": "10.1371/journal.pone.0342849",
+      "module": "test-sub",
+      "date": "2026-03-11",
+      "title": "Glucocorticoids suppress early lung inflammation and impair control of SARS-CoV-2 in non-human prima",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41805689",
+      "pmid": "41805689",
+      "doi": "10.2196/82215",
+      "module": "test-sub",
+      "date": "2026-03-11",
+      "title": "Community-Acquired Pneumonia in Patients With Diabetes: Narrative Review.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41805545",
+      "pmid": "41805545",
+      "doi": "10.1172/jci.insight.198712",
+      "module": "test-sub",
+      "date": "2026-03-11",
+      "title": "Early life viral infection generates pathologic tissue resident memory cells that contribute to asth",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41802258",
+      "pmid": "41802258",
+      "doi": "10.7326/ANNALS-25-02790",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Determining the Conclusiveness of Systematic Review Evidence : A Scoping Review of Methodological Ap",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41802241",
+      "pmid": "41802241",
+      "doi": "10.1021/acs.biochem.5c00718",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Mechanistic Analysis of Programmed Iteration by Module 5 of the Nocardiosis-Associated Polyketide (N",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41802054",
+      "pmid": "41802054",
+      "doi": "10.1073/pnas.2521002123",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Heightened risk of fatal police violence in and around reservations for American Indian/Alaska Nativ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801997",
+      "pmid": "41801997",
+      "doi": "10.1371/journal.pone.0343312",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "New conditions for stability of multiple delayed Cohen-Grossberg Neural Networks of neutral-type.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801979",
+      "pmid": "41801979",
+      "doi": "10.1371/journal.pntd.0014090",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Spatio-temporal analysis and geostatistical modelling of onchocerciasis prevalence in Nigeria to sup",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801781",
+      "pmid": "41801781",
+      "doi": "10.1109/TCYB.2026.3667965",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Output Consensus of a Class of Multiple Heterogeneous-Dimensional Switched Nonlinear Systems.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801756",
+      "pmid": "41801756",
+      "doi": "10.1037/pspp0000597",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Tailoring personality interventions: How timing, context, and strategies influence proximal interven",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801709",
+      "pmid": "41801709",
+      "doi": "10.1037/emo0001666",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Dynamics of emotion expression in tweets are associated with depression and anxiety.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801089",
+      "pmid": "41801089",
+      "doi": "10.1177/00236772251380871",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Assessing laboratory animal welfare: the crucial importance of construct validity.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801065",
+      "pmid": "41801065",
+      "doi": "10.1021/acs.nanolett.5c06046",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Direct Observation of Nanometer-Sized Steps of Single Myosin VI Molecules in Living Cells.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41801010",
+      "pmid": "41801010",
+      "doi": "10.1097/HP.0000000000002085",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Online Tool for Calculating A Priori Scan Minimum Detectable Concentrations for Common Soil and Stru",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41800862",
+      "pmid": "41800862",
+      "doi": "10.1093/jalm/jfag024",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Evaluation of the Impact of a Pathology Trainee-Driven Manual Review Process for Reference Testing a",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41800823",
+      "pmid": "41800823",
+      "doi": "10.1021/acs.joc.6c00055",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41800784",
+      "pmid": "41800784",
+      "doi": "10.1097/CEH.0000000000000641",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "Professional Inclusivity: Creating Professional Development Learning Environments to Facilitate Lear",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41800699",
+      "pmid": "41800699",
+      "doi": "10.1002/nau.70259",
+      "module": "示例模块 C",
+      "date": "2026-03-10",
+      "title": "In-Depth Real-World Evidence: Assembling a Comprehensive Spinal Cord Injury or Disease Veteran Cohor",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2024.06.28.601274",
+      "pmid": null,
+      "doi": "10.1101/2024.06.28.601274",
+      "module": "示例预印本模块",
+      "date": "2026-03-10",
+      "title": "Integrin-deficient T cell leukemia accumulates in the central nervous system",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.02.28.708710",
+      "pmid": null,
+      "doi": "10.64898/2026.02.28.708710",
+      "module": "示例预印本模块",
+      "date": "2026-03-10",
+      "title": "Natural Microbial Enrichment Modulates Microglial States and Transcriptional Programs Relevant to Al",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.02.28.708687",
+      "pmid": null,
+      "doi": "10.64898/2026.02.28.708687",
+      "module": "示例预印本模块",
+      "date": "2026-03-10",
+      "title": "Clinical Metabolomics studies in diagnosing Prediabetes and Type 2 Diabetes: Unveiling Trends throug",
+      "isPreprint": true
+    },
+    {
+      "key": "test-sub::pmid:41802049",
+      "pmid": "41802049",
+      "doi": "10.1073/pnas.2514484123",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Adhesion forces between macrophages and cancer cells promote early tumor development.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41797714",
+      "pmid": "41797714",
+      "doi": "10.1172/jci.insight.198342",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Human iPSC-derived alveolar macrophages reveal macrophage subtype functions of itaconate in M. tuber",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41734706",
+      "pmid": "41734706",
+      "doi": "10.1016/j.scitotenv.2026.181553",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Chemical composition and toxicological profiles of atmospheric particulate matter: Evidence from in ",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41580128",
+      "pmid": "41580128",
+      "doi": "10.1016/j.jconrel.2026.114655",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Inhalable stealth liposomes improve peptide delivery for pulmonary fibrosis treatment.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41455501",
+      "pmid": "41455501",
+      "doi": "10.1016/j.jconrel.2025.114578",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Pulmonary delivery of glycine-induced outer membrane vesicles as in situ vaccines for metastatic lun",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41801994",
+      "pmid": "41801994",
+      "doi": "10.1371/journal.pone.0343940",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Similarity of sputum mediator signatures between e-cigarette users and COPD depends on GOLD stage an",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41801986",
+      "pmid": "41801986",
+      "doi": "10.1371/journal.pone.0344308",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Serological profile of naïve patients affected by the first sars-cov-2 variant: A prospective study.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41801926",
+      "pmid": "41801926",
+      "doi": "10.1371/journal.pone.0344205",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Prevalence and associated factors of health facility delivery during COVID-19 in the Tamale Metropol",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41801921",
+      "pmid": "41801921",
+      "doi": "10.1371/journal.pone.0344211",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Influence of COVID-19 on postoperative prognosis and pain management.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41801885",
+      "pmid": "41801885",
+      "doi": "10.1371/journal.pone.0343988",
+      "module": "test-sub",
+      "date": "2026-03-10",
+      "title": "Modelling approaches for estimating vaccine effectiveness of consecutive SARS-CoV-2 variant sublinea",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41795700",
+      "pmid": "41795700",
+      "doi": "10.1111/jre.70081",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Diagnosing and Treating Periodontitis and Multimorbidity Altogether: The Case Example of the Physica",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41795695",
+      "pmid": "41795695",
+      "doi": "10.1177/0957154X251392921",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Reform of care for people with mental illness in two German states before reunification: An oral his",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41795541",
+      "pmid": "41795541",
+      "doi": "10.1016/j.talanta.2026.129601",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "A wavelength-dispersive X-ray fluorescence spectrometry method for determining elemental content in ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41795468",
+      "pmid": "41795468",
+      "doi": "10.1016/j.ajhg.2026.02.006",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Identification of de novo variants from parent-proband duos via long-read sequencing.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794888",
+      "pmid": "41794888",
+      "doi": "10.1038/s41398-026-03922-w",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Transdiagnostic mental health symptom dimensions predict use of flexible model-based inference in co",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794848",
+      "pmid": "41794848",
+      "doi": "10.1186/s13041-026-01287-1",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Artificial intelligence-based biomarkers for the diagnosis and treatment of neurological conditions:",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794801",
+      "pmid": "41794801",
+      "doi": "10.1038/s41467-026-70322-5",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Electric double layer structure in concentrated aqueous solution.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794785",
+      "pmid": "41794785",
+      "doi": "10.1038/s41467-026-70057-3",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Spatio-spectral light-by-light moulding in multimode fibre.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794653",
+      "pmid": "41794653",
+      "doi": "10.1002/mrm.70318",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Simulation-Informed Evaluation of Microvascular Parameter Mapping for Diffusion MR Imaging of Solid ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794543",
+      "pmid": "41794543",
+      "doi": "10.1002/jez.b.70017",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Review. Cell Biology and Immunohistochemical Evidence of the Transition Between an Aquatic to a Terr",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794386",
+      "pmid": "41794386",
+      "doi": "10.1016/j.pharmthera.2026.109015",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Insights into effective protocol structuring: optimizing dosing strategies, experimental design, and",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794332",
+      "pmid": "41794332",
+      "doi": "10.1016/j.addr.2026.115842",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Protein-based nanocarriers in the management of hard-to-treat solid tumours.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794309",
+      "pmid": "41794309",
+      "doi": "10.1016/j.pdpdt.2026.105427",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Advances in the application of photodynamic diagnosis in Skin Tumors.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41794023",
+      "pmid": "41794023",
+      "doi": "10.1016/j.crmeth.2026.101309",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "CBLN2 promoter enables genetic access to wide-field neurons of the tree shrew superior colliculus.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41793969",
+      "pmid": "41793969",
+      "doi": "10.1016/j.bmc.2026.118611",
+      "module": "示例模块 C",
+      "date": "2026-03-09",
+      "title": "Zika virus entry inhibitors.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.02.27.708589",
+      "pmid": null,
+      "doi": "10.64898/2026.02.27.708589",
+      "module": "示例预印本模块",
+      "date": "2026-03-09",
+      "title": "Mechanistic insights into B-cell activation and autoreactivity regulation in active SLE and remissio",
+      "isPreprint": true
+    },
+    {
+      "key": "test-sub::pmid:41795185",
+      "pmid": "41795185",
+      "doi": "10.1016/j.ymthe.2026.03.003",
+      "module": "test-sub",
+      "date": "2026-03-09",
+      "title": "Inhalable Lipid Nanoparticles for Macrophage-Specific STING Gene Editing to Ameliorate Pulmonary Fib",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41795778",
+      "pmid": "41795778",
+      "doi": "10.1007/s41999-026-01435-9",
+      "module": "test-sub",
+      "date": "2026-03-09",
+      "title": "Low muscle mass as an independent risk factor for 30-day mortality among older inpatients with aspir",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41795735",
+      "pmid": "41795735",
+      "doi": "10.1556/650.2026.33508",
+      "module": "test-sub",
+      "date": "2026-03-09",
+      "title": "[Is early childhood screen exposure harmful to children's mental health?].",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41795728",
+      "pmid": "41795728",
+      "doi": "10.1007/s00726-026-03511-7",
+      "module": "test-sub",
+      "date": "2026-03-09",
+      "title": "Plasma branched-chain amino acids in chronic kidney disease: associations with atherogenic lipids an",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41795334",
+      "pmid": "41795334",
+      "doi": "10.1016/j.iccn.2026.104362",
+      "module": "test-sub",
+      "date": "2026-03-09",
+      "title": "Nurses' knowledge, attitudes, and practices in oral care for mechanically ventilated patients: A sco",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41793289",
+      "pmid": "41793289",
+      "doi": "10.1002/jclp.70125",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Italian Validation of the Brief Self-Reported Version of the Spence Children's Anxiety Scale for Chi",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41793168",
+      "pmid": "41793168",
+      "doi": "10.1002/ecy.70300",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Clarifying space use concepts in ecology: Range vs. occurrence distributions.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41793043",
+      "pmid": "41793043",
+      "doi": "10.1002/anie.8843693",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Flow Pyrolysis Synthesis of Single-Atom Catalysts With Tunable Crumple and Electronic Structures for",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41792754",
+      "pmid": "41792754",
+      "doi": "10.1186/s12916-026-04750-x",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41792445",
+      "pmid": "41792445",
+      "doi": "10.1038/s41559-026-03008-2",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Marine protected areas marginally offset anthropogenic declines in tropical reef fish contributions ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41792100",
+      "pmid": "41792100",
+      "doi": "10.1038/s41377-026-02207-7",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Quantitative determination of in-plane optical anisotropy by surface plasmon resonance holographic m",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791872",
+      "pmid": "41791872",
+      "doi": "10.1136/jech-2025-225721",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Educational inequalities in site-specific cancer mortality: a Japanese census-linked study.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791869",
+      "pmid": "41791869",
+      "doi": "10.1136/heartjnl-2025-326197",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Reimagining Thomas Lewis's perspective: using artificial intelligence tools to predict cardiovascula",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791787",
+      "pmid": "41791787",
+      "doi": "10.1136/bmjopen-2025-108281",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Promoting active outdoor play and healthy dietary behaviours through the co-creation of supporting p",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791748",
+      "pmid": "41791748",
+      "doi": "10.1098/rstb.2024.0333",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Managing populations after a disease outbreak: exploration of epidemiological consequences of manage",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791577",
+      "pmid": "41791577",
+      "doi": "10.1016/j.jfp.2026.100746",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Evaluation of Novel Filtration System Utilizing Biochar, Zero-Valent Iron and White Rot Fungi to Inh",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791572",
+      "pmid": "41791572",
+      "doi": "10.1016/j.fitote.2026.107164",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "New aspidofractinine-type alkaloids with cytotoxic activity from the roots of Kopsia officinalis.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791393",
+      "pmid": "41791393",
+      "doi": "10.1016/j.cels.2025.101518",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "The metabolome of an E. coli CRISPRi library identifies benefits of minimal metabolite levels and ta",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41791123",
+      "pmid": "41791123",
+      "doi": "10.1021/acs.langmuir.5c06252",
+      "module": "示例模块 C",
+      "date": "2026-03-08",
+      "title": "Adsorption of Surfactants and Polymers to Biomimetic Hair Model Surfaces.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.02.03.703526",
+      "pmid": null,
+      "doi": "10.64898/2026.02.03.703526",
+      "module": "示例预印本模块",
+      "date": "2026-03-08",
+      "title": "GM-CSF regulates ILC states and myeloid cell signaling during ulceration in Crohns disease",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.02.26.708339",
+      "pmid": null,
+      "doi": "10.64898/2026.02.26.708339",
+      "module": "示例预印本模块",
+      "date": "2026-03-08",
+      "title": "MUC4-targeted CAR-T Cells Restrain Chemotherapy-resistant Colorectal Cancer",
+      "isPreprint": true
+    },
+    {
+      "key": "test-sub::pmid:41772931",
+      "pmid": "41772931",
+      "doi": "10.1080/10717544.2026.2634421",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Cerium oxide nanoparticles: antioxidant properties in silicosis treatment and biomedical application",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41467904",
+      "pmid": "41467904",
+      "doi": "10.1080/19490976.2025.2606486",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Gut microbiome-derived propionate reprograms alveolar macrophages metabolically and regulates lung i",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41431237",
+      "pmid": "41431237",
+      "doi": "10.1080/07853890.2025.2606565",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Insulin-like growth factor-1/insulin-like growth factor-1 receptor signalling in macrophages facilit",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41704233",
+      "pmid": "41704233",
+      "doi": "10.1016/j.bioactmat.2026.02.006",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Polyplex of peptide-mannan and RNA for intranasal delivery of TGF-β siRNA in treatment of pulmonary ",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41626528",
+      "pmid": "41626528",
+      "doi": "10.1016/j.jtauto.2026.100349",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Liraglutide prevents lupus-associated diffuse alveolar hemorrhage via inhibiting lymphocyte infiltra",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41655727",
+      "pmid": "41655727",
+      "doi": "10.1016/j.jep.2026.121333",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Phytotherapeutic potential of Bauhinia purpurea Linn. in hyperoxic lung injury: Insights from in viv",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41619860",
+      "pmid": "41619860",
+      "doi": "10.1016/j.jep.2026.121283",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Single-cell transcriptomics and metabolomics demonstrate that Taohe Chengqi decoction alleviates sep",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41742906",
+      "pmid": "41742906",
+      "doi": "10.1016/j.radcr.2026.01.088",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Multifocal micronodular pneumocyte hyperplasia in the absence of tuberous sclerosis complex: A case ",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41456455",
+      "pmid": "41456455",
+      "doi": "10.1016/j.bioadv.2025.214668",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "DLP 3D-printed biomimetic periodontium composite with xenogenic treated dentin matrix modulates peri",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41223716",
+      "pmid": "41223716",
+      "doi": "10.1016/j.biomaterials.2025.123843",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Sericin-based dual-module microspheres promote periodontal regeneration through four-dimensional mic",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41793765",
+      "pmid": "41793765",
+      "doi": "10.1161/CIRCINTERVENTIONS.125.016213",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Angiography-Derived Fractional Flow Reserve During Percutaneous Coronary Intervention.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41793558",
+      "pmid": "41793558",
+      "doi": "10.1007/s10735-026-10761-y",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Aconiti Lateralis Radix Praeparata active ingredients of Heishunpian potential on LPS-induced Nrf-2/",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41793378",
+      "pmid": "41793378",
+      "doi": "10.1002/ptr.70266",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Modern Research on Traditional Chinese Ethnomedicines for Rheumatoid Arthritis: Acting Through Signa",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41792957",
+      "pmid": "41792957",
+      "doi": "10.1002/mdc3.70584",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Longitudinal Videofluorographic Dysphagia Measures in Progressive Supranuclear Palsy.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41792818",
+      "pmid": "41792818",
+      "doi": "10.1186/s13054-026-05936-8",
+      "module": "test-sub",
+      "date": "2026-03-08",
+      "title": "Effectiveness of toothbrushing as a replacement for chlorhexidine in oral care, combined with head e",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41790129",
+      "pmid": "41790129",
+      "doi": "10.1021/acs.inorgchem.5c02744",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Asymmetric Eu(III) Coordination Polymers Featuring Coexisting Δ/Λ Chirality and Diverse Coordination",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41789828",
+      "pmid": "41789828",
+      "doi": "10.1021/acs.jpclett.6c00239",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Fast and Efficient Adiabatic Photoisomerization of Linearly Coupled Dithienylethenes.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41789785",
+      "pmid": "41789785",
+      "doi": "10.1021/jacs.6c02372",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41789724",
+      "pmid": "41789724",
+      "doi": "10.1093/genetics/iyag062",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Analytical expectations for ancestry junction accumulation in admixed genomes.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41789689",
+      "pmid": "41789689",
+      "doi": "10.7554/eLife.94512",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41788820",
+      "pmid": "41788820",
+      "doi": "10.3168/jdsc.2025-0883",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Potential roles of colostrum microbiota in shaping calf gut microbiota and colostrum metabolites.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41787917",
+      "pmid": "41787917",
+      "doi": null,
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "[How is confidence in vaccination against measles sustained?].",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41787418",
+      "pmid": "41787418",
+      "doi": "10.1186/s12916-026-04768-1",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "AI-based quality control was associated with improved fetal ultrasound image quality in low-resource",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41786812",
+      "pmid": "41786812",
+      "doi": "10.1038/s41598-026-40586-4",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Dimeric magnetic dumbbell nanoparticles with selective immobilization of chromophores for improved t",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41786720",
+      "pmid": "41786720",
+      "doi": "10.1038/s41467-026-69605-8",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Design-driven optimization of low-cost reagent formulations for reproducible and high-yielding cell-",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41786463",
+      "pmid": "41786463",
+      "doi": "10.1111/ggi.70441",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Respiratory Infectious Disease Transmission in a Nursing Home Based on Real Close-Contact Behaviors.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41785809",
+      "pmid": "41785809",
+      "doi": "10.1016/j.jenvman.2026.129206",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Co-producing sustainable water governance: The role of university extension in the Babitonga Basin, ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41785568",
+      "pmid": "41785568",
+      "doi": "10.1016/j.actpsy.2026.106585",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Attraction versus repulsion: Are central tendency effects and duration adaptation effects based on a",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41785561",
+      "pmid": "41785561",
+      "doi": "10.1016/j.aap.2026.108481",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "Decoding the influencing factors of pedestrian-automated vehicle interaction in shared spaces: A mul",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41785488",
+      "pmid": "41785488",
+      "doi": "10.31128/AJGP-11-24-7468",
+      "module": "示例模块 C",
+      "date": "2026-03-06",
+      "title": "The evolving face of Aboriginal and Torres Strait Islander health in rural Victoria.",
+      "isPreprint": false
+    },
+    {
+      "key": "肺泡巨噬细胞::pmid:37978185",
+      "pmid": "37978185",
+      "doi": "10.1038/s41467-023-43223-0",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-03-06",
+      "title": "The transcriptional and phenotypic characteristics that define alveolar macrophage subsets in acute ",
+      "isPreprint": false
+    },
+    {
+      "key": "肺泡巨噬细胞::pmid:37615937",
+      "pmid": "37615937",
+      "doi": "10.1084/jem.20221388",
+      "module": "肺泡巨噬细胞",
+      "date": "2026-03-06",
+      "title": "Trained immunity of alveolar macrophages enhances injury resolution via KLF4-MERTK-mediated efferocy",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41784493",
+      "pmid": "41784493",
+      "doi": "10.1128/spectrum.03280-25",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41782027",
+      "pmid": "41782027",
+      "doi": "10.1186/s12951-026-04135-5",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "Spatial and cellular composition of lung fibrosis induced by multi-walled carbon nanotubes.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41774079",
+      "pmid": "41774079",
+      "doi": "10.1084/jem.20252667",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "Sensing of metabolic signals via GPR183 promotes occupation of lung macrophage niches by monocytes.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41643678",
+      "pmid": "41643678",
+      "doi": "10.1016/j.cmet.2026.01.005",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "Ketogenic diet alleviates septic lung injury via microbial gut-lung axis.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41790211",
+      "pmid": "41790211",
+      "doi": "10.1007/s00540-026-03698-9",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "Monitoring of neuromuscular block for safe anesthesia: FAQs for proper understanding.",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41790200",
+      "pmid": "41790200",
+      "doi": "10.1007/s00063-026-01427-4",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "[Standardized ward rounds in the intensive care unit].",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41789916",
+      "pmid": "41789916",
+      "doi": "10.1128/spectrum.03304-25",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "test-sub::pmid:41787669",
+      "pmid": "41787669",
+      "doi": "10.1080/1028415X.2026.2634120",
+      "module": "test-sub",
+      "date": "2026-03-06",
+      "title": "Influence of dysphagia risk on body composition and dietary habits in adults with multiple sclerosis",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41780056",
+      "pmid": "41780056",
+      "doi": "10.1021/acs.biochem.5c00782",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "The Power of Protein Dynamics in Binding and Allostery.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779964",
+      "pmid": "41779964",
+      "doi": "10.1212/WNL.0000000000214678",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Association of Changes in Activity Patterns With Brain Atrophy and Disability Progression in People ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779931",
+      "pmid": "41779931",
+      "doi": "10.1021/acs.analchem.5c07149",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "d-Lactate SELEX Yielding Aptamers Binding Stronger to l-Lactate: Implication of Intrinsic Chiral Pre",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779649",
+      "pmid": "41779649",
+      "doi": "10.1109/TCYB.2026.3668877",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Optimized Distributed Filtering Over Binary Sensor Network: A Dynamic Event-Triggering Protocol With",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779642",
+      "pmid": "41779642",
+      "doi": "10.1109/TNNLS.2026.3665811",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Fractional-Order Dynamics Learning and Control via Data-Driven Approaches: Taking Soft Manipulator a",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779242",
+      "pmid": "41779242",
+      "doi": "10.1007/s11538-026-01604-8",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "SSRCA: A Novel Machine Learning Pipeline to Perform Sensitivity Analysis for Agent-Based Models.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779218",
+      "pmid": "41779218",
+      "doi": "10.1007/s10985-026-09692-3",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Doubly robust g-estimation of structural nested cumulative survival time models with non-ignorable, ",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41779022",
+      "pmid": "41779022",
+      "doi": "10.1007/s00103-026-04202-0",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "[Large-scale surveys on the work situation of people with health impairments and disabilities in Ger",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778929",
+      "pmid": "41778929",
+      "doi": "10.1016/j.kint.2025.12.028",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Kidney Disease: Improving Global Outcomes (KDIGO): navigating a rapidly changing landscape.",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778898",
+      "pmid": "41778898",
+      "doi": "10.1021/acs.inorgchem.5c06049",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "[object Object]",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778895",
+      "pmid": "41778895",
+      "doi": "10.1121/10.0042820",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Automation of real-time vocal tract image segmentation with SAM 2.0 and morphological operation impl",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778558",
+      "pmid": "41778558",
+      "doi": "10.4045/tidsskr.24.0685",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "[Not Available].",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778476",
+      "pmid": "41778476",
+      "doi": "10.1002/anie.4437375",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Electronic-Effect-Guided Bifunctional Iron Catalyst for the Copolymerization of Epoxides and Anhydri",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778403",
+      "pmid": "41778403",
+      "doi": "10.4103/aam.aam_318_25",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "A Study on Branching Pattern of Middle Cerebral Artery and its Variations: A Systematic Review and M",
+      "isPreprint": false
+    },
+    {
+      "key": "示例模块 c::pmid:41778394",
+      "pmid": "41778394",
+      "doi": "10.1177/08927790261427870",
+      "module": "示例模块 C",
+      "date": "2026-03-05",
+      "title": "Validation of a Renal Papillary Grading System: Comparison of Patients Forming Calcium Oxalate and A",
+      "isPreprint": false
+    },
+    {
+      "key": "示例预印本模块::doi:10.1101/2025.08.25.672130",
+      "pmid": null,
+      "doi": "10.1101/2025.08.25.672130",
+      "module": "示例预印本模块",
+      "date": "2026-03-05",
+      "title": "Tissue-specific clonal selection and differentiation of CD4+ T cells during infection",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2025.12.03.692155",
+      "pmid": null,
+      "doi": "10.64898/2025.12.03.692155",
+      "module": "示例预印本模块",
+      "date": "2026-03-05",
+      "title": "Serum IL-6 and IL-18 Responses in Pediatric COVID-19: Role of Vitamin D Status in a Cohort from Azer",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2025.12.16.694652",
+      "pmid": null,
+      "doi": "10.64898/2025.12.16.694652",
+      "module": "示例预印本模块",
+      "date": "2026-03-05",
+      "title": "Limited bone marrow chimerism impairs cell competition in the thymus and causes leukemia",
+      "isPreprint": true
+    },
+    {
+      "key": "示例预印本模块::doi:10.64898/2026.01.14.699556",
+      "pmid": null,
+      "doi": "10.64898/2026.01.14.699556",
+      "module": "示例预印本模块",
+      "date": "2026-03-05",
+      "title": "Molecular heterogeneity and differential metabolic signatures in thymic adipocytes",
+      "isPreprint": true
+    },
+    {
+      "key": "肺泡巨噬细胞-预印本::doi:10.1101/2024.08.02.606358",
+      "pmid": null,
+      "doi": "10.1101/2024.08.02.606358",
+      "module": "肺泡巨噬细胞-预印本",
+      "date": "2026-03-04",
+      "title": "ImPaqT - A Golden Gate-based Toolkit for Zebrafish Transgenesis",
+      "isPreprint": true
+    }
+  ]
+}

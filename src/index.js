@@ -18,7 +18,7 @@ import { translateAllPapers } from './translate.js';
 import { analyzeAllPapers } from './analyze.js';
 import { sendPaperEmail } from './email.js';
 import { getJournalRanks, formatJournalInfo } from './journal-rank.js';
-import { filterUnsentPapers, preRecordPapers, recordSentPapers } from './sent-papers.js';
+import { cleanupSentPapersTempFile, filterUnsentPapers, preRecordPapers, recordSentPapers } from './sent-papers.js';
 import { saveRunReport } from './report.js';
 import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
@@ -252,6 +252,7 @@ async function processModule(module) {
 }
 
 async function main() {
+  cleanupSentPapersTempFile();
   console.log('\n========================================');
   console.log('  Papfast - 多模块论文订阅');
   console.log('  时间:', new Date().toLocaleString('zh-CN'));
